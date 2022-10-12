@@ -1,0 +1,18 @@
+section {
+    display: table;
+  }
+  
+  .label {
+    display: table-cell;
+
+  }
+  
+  .button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
