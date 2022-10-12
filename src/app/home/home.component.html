@@ -18,7 +18,7 @@
       </form>
 </div> -->
 
-<div class="container">
+<!-- <div class="container">
   <form [formGroup]="calculatorForm">
 
     <div>
@@ -55,5 +55,54 @@
     </div>
 
     <button (click)="getPrice()">Check Price</button>
+  </form>
+
+  <div>{{valTicketPrice}}</div>
+
+</div> -->
+
+<div class="container">
+  <form [formGroup]="calculatorForm">
+
+    <div class="parent">
+      <div class="div1">
+       
+      </div>
+      <div class="div2"><label for="fromStation">From : </label> </div>
+      <div class="div3"><select id="fromStation" formControlName="fromStation">
+          <option value="">-Select-</option>
+          <option *ngFor="let station of Stations" [ngValue]="station">{{station.station}}</option>
+        </select> </div>
+
+      <div class="div4">
+        
+      </div>
+      <div class="div5"> <label for="toStation">To : </label></div>
+      <div class="div6"><select id="toStation" formControlName="toStation">
+          <option value="">-Select-</option>
+          <option *ngFor="let station of Stations" [ngValue]="station">{{station.station}}</option>
+        </select> </div>
+      <div class="div7">
+       
+      </div>
+      <div class="div8"> <label for="fclass">1st Class</label>
+        <input type="radio" id="fclass" name="ticketClass" formControlName="ticketClass" value="1"></div>
+      <div class="div9"> <label for="sclass">2nd Class</label>
+        <input type="radio" id="sclass" name="ticketClass" formControlName="ticketClass" value="2"></div>
+      <div class="div10"><label for="tclass">3rd Class</label>
+        <input type="radio" id="tclass" name="ticketClass" formControlName="ticketClass" value="3"> </div>
+
+      <div class="div11">
+        
+      </div>
+      <div class="div12"> <label for="normalTicket">Normal Ticket</label>
+        <input type="radio" id="normalTicket" name="ticketType" formControlName="ticketType" value="1"></div>
+      <div class="div13"><label for="privateSeason">Private Season</label>
+        <input type="radio" id="privateSeason" name="ticketType" formControlName="ticketType" value="2"> </div>
+      <div class="div14"><label for="gvtSeason">School Season</label>
+        <input type="radio" id="gvtSeason" name="ticketType" formControlName="ticketType" value="3"> </div>
+      <div class="div15"><button class="button" (click)="getPrice()">Check Price</button> </div>
+      <div class="div16" *ngIf="valTicketPrice!=0">Rs. {{valTicketPrice}}.00</div>
+    </div>
   </form>
 </div>
