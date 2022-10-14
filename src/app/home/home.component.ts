@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
-import StationsList from 'src/assets/json/stations.json'
+//import StationsList from 'src/assets/json/stations.json'
 import { Station } from '../common/models/Station';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,20 @@ import { Station } from '../common/models/Station';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  /**
+   *
+   */
+   constructor(private http: HttpClient) {
+    this.http.get('assets/json/Stations.json').subscribe((res) => {
+      this.StationList = res;
+      //console.log('--- result :: ',  this.StationList);
+      this.Stations = this.StationList;
+    //console.log(this.Stations)
+    });
+}
+
+  StationList:any
   // myControl = new FormControl('');
   // options: string[] = ['One', 'Two', 'Three'];
   // filteredOptions = new Observable<string[]>;
@@ -37,7 +52,7 @@ export class HomeComponent implements OnInit {
   RATE34 = 1.4;
   RATE35 = 1.1;
 
-  Stations = StationsList;
+  Stations :any;
   valFromStation: any;
   valToStation: any;
   valTicketClass: any;
@@ -58,6 +73,7 @@ export class HomeComponent implements OnInit {
     //   startWith(''),
     //   map(value => this._filter(value || '')),
     // );
+    
   }
 
   // private _filter(value: string): string[] {

@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PriceCalculatorMainComponent } from './price-calculator-main/price-calculator-main.component';
 import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from "@angular/common/http";
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from "@angular/material/icon";
@@ -32,6 +33,7 @@ import { MatInputModule } from "@angular/material/input";
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
 
     MatToolbarModule,
     MatIconModule,
