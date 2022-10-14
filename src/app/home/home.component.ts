@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
-import StationsList from 'src/app/common/stations.json'
+import StationsList from 'src/assets/json/stations.json'
 import { Station } from '../common/models/Station';
 
 @Component({
