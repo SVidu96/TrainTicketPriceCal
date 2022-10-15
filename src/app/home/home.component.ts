@@ -123,7 +123,7 @@ export class HomeComponent implements OnInit {
     if(this.valTicketType=="1"){
       return ticketPrice;
     }else if(this.valTicketType=="2"){
-      return ticketPrice*24;
+      return this.ceiling(ticketPrice*24,100);
     }else if(this.valTicketType=="3"){
       return ticketPrice*6;
     }
