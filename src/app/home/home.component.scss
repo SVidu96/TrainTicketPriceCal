@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.cont {
+  display: flex;
+  justify-content: center;
+  background-color: #999999;
+}
+
 .example-form {
   min-width: 150px;
   max-width: 500px;
@@ -14,9 +20,23 @@
 
 .example-full-width {
   width: 100%;
-
+}
+.toggle-button-group{
+  width: 100%;
+  margin-top:10px
+}
+.toggle-button{
+  width: 100%;
+}
+.check-price-button{
+  width: 100%;
+  margin-top:10px
 }
 
+.price-card{
+  margin-top:10px;
+  text-align: center;
+}
 .parent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
