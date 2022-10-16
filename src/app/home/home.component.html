@@ -62,29 +62,9 @@
 </div> -->
 
 <div class="container">
-  <form [formGroup]="calculatorForm">
+  <!-- <form [formGroup]="calculatorForm"> -->
 
-    <div class="parent">
-      <div class="div1">
-       
-      </div>
-      <div class="div2"><label for="fromStation">From : </label> </div>
-      <div class="div3"><select id="fromStation" formControlName="fromStation">
-          <option value="">-Select-</option>
-          <option *ngFor="let station of Stations" [ngValue]="station">{{station.station}}</option>
-        </select> </div>
-
-      <div class="div4">
-        
-      </div>
-      <div class="div5"> <label for="toStation">To : </label></div>
-      <div class="div6"><select id="toStation" formControlName="toStation">
-          <option value="">-Select-</option>
-          <option *ngFor="let station of Stations" [ngValue]="station">{{station.station}}</option>
-        </select> </div>
-      <div class="div7">
-       
-      </div>
+    <!-- <div class="parent">
       <div class="div8"> <label for="fclass">1st Class</label>
         <input type="radio" id="fclass" name="ticketClass" formControlName="ticketClass" value="1"></div>
       <div class="div9"> <label for="sclass">2nd Class</label>
@@ -100,9 +80,62 @@
       <div class="div13"><label for="privateSeason">Private Season</label>
         <input type="radio" id="privateSeason" name="ticketType" formControlName="ticketType" value="2"> </div>
       <div class="div14"><label for="gvtSeason">School Season</label>
-        <input type="radio" id="gvtSeason" name="ticketType" formControlName="ticketType" value="3"> </div>
-      <div class="div15"><button class="button" (click)="getPrice()">Check Price</button> </div>
-      <div class="div16" *ngIf="valTicketPrice!=0">Rs. {{valTicketPrice}}.00</div>
-    </div>
-  </form>
+        <input type="radio" id="gvtSeason" name="ticketType" formControlName="ticketType" value="3"> </div> -->
+      <!-- <div class="div15"><button class="button" (click)="getPrice()">Check Price</button> </div> -->
+      <!-- <div class="div16" *ngIf="valTicketPrice!=0">Rs. {{valTicketPrice}}.00</div>
+    </div> -->
+  <!-- </form> -->
+<!-- </div> -->
+
+
+<div class="cont">
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>From Station</mat-label>
+    <input type="text"
+           placeholder="-Select-"
+           aria-label="From Station"
+           matInput
+           [formControl]="fromStation"
+           [(ngModel)]="searchText1"
+           [matAutocomplete]="autoNationality">
+    <mat-autocomplete #autoNationality="matAutocomplete">
+      <mat-option *ngFor="let station of Stations | appFilter: searchText1" [value]="station.station">
+        {{station.station}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>To Station</mat-label>
+    <input type="text"
+           placeholder="-Select-"
+           aria-label="To Station"
+           matInput
+           [formControl]="toStation"
+           [(ngModel)]="searchText2"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let station of Stations | appFilter: searchText2" [value]="station.station">
+        {{station.station}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <mat-button-toggle-group [formControl]="ticketClass" class="toggle-button-group" aria-label="Font Style">
+    <mat-button-toggle class="toggle-button" value="1">1st Class</mat-button-toggle>
+    <mat-button-toggle class="toggle-button" value="2">2nd Class</mat-button-toggle>
+    <mat-button-toggle class="toggle-button" value="3">3rd Class</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <mat-button-toggle-group [formControl]="ticketType" class="toggle-button-group" aria-label="Font Style">
+    <mat-button-toggle class="toggle-button" value="1">Normal Ticket</mat-button-toggle>
+    <mat-button-toggle class="toggle-button" value="2">Private Season</mat-button-toggle>
+    <mat-button-toggle class="toggle-button" value="3">School Season</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <button mat-raised-button color="primary" class="check-price-button" (click)="getPrice()">Check Price</button>
+
+  <mat-card class="price-card" *ngIf="valTicketPrice!=0">Rs. {{valTicketPrice}}.00</mat-card>
+</form>
 </div>

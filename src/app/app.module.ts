@@ -18,6 +18,10 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatInputModule } from "@angular/material/input";
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+
+import { FilterPipe } from './common/pipes/filter.pipe';
 
 
 @NgModule({
@@ -26,6 +30,7 @@ import { MatInputModule } from "@angular/material/input";
     HomeComponent,
     PriceCalculatorMainComponent,
     AboutComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,9 @@ import { MatInputModule } from "@angular/material/input";
     MatSidenavModule,
     MatListModule,
     MatStepperModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonToggleModule,
+    MatCardModule
     
   ],
   providers: [FormControl],

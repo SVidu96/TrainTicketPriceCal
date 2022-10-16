@@ -1,9 +1,16 @@
 .container {
   margin-top: 2px;
   padding: 50px;
-  background-color: #999999;
+  background-color: #303030;
   display: flex;
   justify-content: center;
+  color: white;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  background-color: #303030;
 }
 
 .example-form {
@@ -14,9 +21,23 @@
 
 .example-full-width {
   width: 100%;
-
+}
+.toggle-button-group{
+  width: 100%;
+  margin-top:10px
+}
+.toggle-button{
+  width: 100%;
+}
+.check-price-button{
+  width: 100%;
+  margin-top:10px
 }
 
+.price-card{
+  margin-top:10px;
+  text-align: center;
+}
 .parent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
