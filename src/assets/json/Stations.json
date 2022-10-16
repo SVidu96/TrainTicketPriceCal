@@ -1,623 +1,963 @@
 [
-    {
-      "station": "Colombo Fort",
-      "distance": 0,
-      "keyline": "00"
-    },
-    {
-      "station": "Maradana",
-      "distance": 1.9,
-      "keyline": "M1"
-    },
-    {
-      "station": "Dematagoda",
-      "distance": 3.668,
-      "keyline": "M2"
-    },
-    {
-      "station": "Kelaniya",
-      "distance": 6.873,
-      "keyline": "M3"
-    },
-    {
-      "station": "Wanawasala",
-      "distance": 8.676,
-      "keyline": "M4"
-    },
-    {
-      "station": "Hunupitiya",
-      "distance": 10.026,
-      "keyline": "M5"
-    },
-    {
-      "station": "Enderamulla",
-      "distance": 11.699,
-      "keyline": "M6"
-    },
-    {
-      "station": "Horape",
-      "distance": 14.043,
-      "keyline": "M7"
-    },
-    {
-      "station": "Ragama",
-      "distance": 15.546,
-      "keyline": "M8",
-      "isJunction":"P0"
-    },
-    {
-      "station": "Walpola",
-      "distance": 18.116,
-      "keyline": "M9"
-    },
-    {
-      "station": "Batuwatte",
-      "distance": 19.083,
-      "keyline": "M10"
-    },
-    {
-      "station": "Bulugahagoda",
-      "distance": 20.731,
-      "keyline": "M11"
-    },
-    {
-      "station": "Ganemulla",
-      "distance": 22.522,
-      "keyline": "M12"
-    },
-    {
-      "station": "Yagoda",
-      "distance": 24.324,
-      "keyline": "M13"
-    },
-    {
-      "station": "Gampaha",
-      "distance": 27.538,
-      "keyline": "M14"
-    },
-    {
-      "station": "Daraluwa",
-      "distance": 29.921,
-      "keyline": "M15"
-    },
-    {
-      "station": "Bemmulla",
-      "distance": 31.905,
-      "keyline": "M16"
-    },
-    {
-      "station": "Magelegoda",
-      "distance": 34.164,
-      "keyline": "M17"
-    },
-    {
-      "station": "Heendeniya",
-      "distance": 35.67,
-      "keyline": "M18"
-    },
-    {
-      "station": "Veyangoda",
-      "distance": 37.478,
-      "keyline": "M19"
-    },
-    {
-      "station": "Wandurawa",
-      "distance": 39.331,
-      "keyline": "M20"
-    },
-    {
-      "station": "Keenawala",
-      "distance": 41.627,
-      "keyline": "M21"
-    },
-    {
-      "station": "Pallewala",
-      "distance": 43.913,
-      "keyline": "M22"
-    },
-    {
-      "station": "Ganegoda",
-      "distance": 46.213,
-      "keyline": "M23"
-    },
-    {
-      "station": "Wijayarajadahana",
-      "distance": 49.1,
-      "keyline": "M24"
-    },
-    {
-      "station": "Mirigama",
-      "distance": 50.27,
-      "keyline": "M25"
-    },
-    {
-      "station": "Wilwatte",
-      "distance": 52.108,
-      "keyline": "M26"
-    },
-    {
-      "station": "Botale",
-      "distance": 54.433,
-      "keyline": "M27"
-    },
-    {
-      "station": "Abeypussa",
-      "distance": 56.224,
-      "keyline": "M28"
-    },
-    {
-      "station": "Yattalgoda",
-      "distance": 59.851,
-      "keyline": "M29"
-    },
-    {
-      "station": "Buthgamuwa",
-      "distance": 61.873,
-      "keyline": "M30"
-    },
-    {
-      "station": "Alawwa",
-      "distance": 65.672,
-      "keyline": "M31"
-    },
-    {
-      "station": "Wlakubura",
-      "distance": 69.784,
-      "keyline": "M32"
-    },
-    {
-      "station": "Poplgahawela",
-      "distance": 73.827,
-      "keyline": "M33"
-    },
-    {
-      "station": "Panaleeya",
-      "distance": 77.872,
-      "keyline": "M34"
-    },
-    {
-      "station": "Tismalpola",
-      "distance": 78.954,
-      "keyline": "M35"
-    },
-    {
-      "station": "Yatagama",
-      "distance": 82.555,
-      "keyline": "M36"
-    },
-    {
-      "station": "Rambukkana",
-      "distance": 84.437,
-      "keyline": "M37"
-    },
-    {
-      "station": "Kadigamuwa",
-      "distance": 90.239,
-      "keyline": "M38"
-    },
-    {
-      "station": "Gangoda",
-      "distance": 93.805,
-      "keyline": "M39"
-    },
-    {
-      "station": "Ihalakotte",
-      "distance": 96.081,
-      "keyline": "M40"
-    },
-    {
-      "station": "Balana",
-      "distance": 101.069,
-      "keyline": "M41"
-    },
-    {
-      "station": "Kadugannawa",
-      "distance": 105.537,
-      "keyline": "M42"
-    },
-    {
-      "station": "Pilimatalawa",
-      "distance": 109.446,
-      "keyline": "M43"
-    },
-    {
-      "station": "Peradeniya",
-      "distance": 114.851,
-      "keyline": "M44"
-    },
-    {
-      "station": "Koshinna",
-      "distance": 117.36,
-      "keyline": "M45"
-    },
-    {
-      "station": "Gelioya",
-      "distance": 119.54,
-      "keyline": "M46"
-    },
-    {
-      "station": "Gampola",
-      "distance": 126.931,
-      "keyline": "M47"
-    },
-    {
-      "station": "Tembligala",
-      "distance": 130.873,
-      "keyline": "M48"
-    },
-    {
-      "station": "Ulapone",
-      "distance": 134.306,
-      "keyline": "M49"
-    },
-    {
-      "station": "Nawalapitiya",
-      "distance": 141.522,
-      "keyline": "M50"
-    },
-    {
-      "station": "Inguruoya",
-      "distance": 147.307,
-      "keyline": "M51"
-    },
-    {
-      "station": "Galaboda",
-      "distance": 152.857,
-      "keyline": "M52"
-    },
-    {
-      "station": "Watawala",
-      "distance": 162.1,
-      "keyline": "M53"
-    },
-    {
-      "station": "Ihalawatawala",
-      "distance": 165.15,
-      "keyline": "M54"
-    },
-    {
-      "station": "Rosella",
-      "distance": 167.789,
-      "keyline": "M55"
-    },
-    {
-      "station": "Hatton",
-      "distance": 174.905,
-      "keyline": "M56"
-    },
-    {
-      "station": "Kotagala",
-      "distance": 179.969,
-      "keyline": "M57"
-    },
-    {
-      "station": "Talawakele",
-      "distance": 187.857,
-      "keyline": "M58"
-    },
-    {
-      "station": "watagoda",
-      "distance": 194.296,
-      "keyline": "M59"
-    },
-    {
-      "station": "Greatwestern",
-      "distance": 199.306,
-      "keyline": "M60"
-    },
-    {
-      "station": "Radella",
-      "distance": 202.709,
-      "keyline": "M61"
-    },
-    {
-      "station": "Nanuoya",
-      "distance": 207.056,
-      "keyline": "M62"
-    },
-    {
-      "station": "Perakumpura",
-      "distance": 212.206,
-      "keyline": "M63"
-    },
-    {
-      "station": "Ambewela",
-      "distance": 221.495,
-      "keyline": "M64"
-    },
-    {
-      "station": "Pattipola",
-      "distance": 224.931,
-      "keyline": "M65"
-    },
-    {
-      "station": "Ohiya",
-      "distance": 231.641,
-      "keyline": "M66"
-    },
-    {
-      "station": "Idalgasinna",
-      "distance": 240.563,
-      "keyline": "M67"
-    },
-    {
-      "station": "Haputale",
-      "distance": 247.968,
-      "keyline": "M68"
-    },
-    {
-      "station": "Deyatalawa",
-      "distance": 253.079,
-      "keyline": "M69"
-    },
-    {
-      "station": "Bandarawela",
-      "distance": 259.148,
-      "keyline": "M70"
-    },
-    {
-      "station": "Kinigama",
-      "distance": 261.447,
-      "keyline": "M71"
-    },
-    {
-      "station": "Heeloya",
-      "distance": 265.372,
-      "keyline": "M72"
-    },
-    {
-      "station": "Kitalelle",
-      "distance": 269.73,
-      "keyline": "M73"
-    },
-    {
-      "station": "Elle",
-      "distance": 271.592,
-      "keyline": "M74"
-    },
-    {
-      "station": "Demodara",
-      "distance": 277.717,
-      "keyline": "M75"
-    },
-    {
-      "station": "Uduwara",
-      "distance": 283.222,
-      "keyline": "M76"
-    },
-    {
-      "station": "Haliela",
-      "distance": 286.596,
-      "keyline": "M77"
-    },
-    {
-      "station": "Badulla",
-      "distance": 292.393,
-      "keyline": "M78"
-    },
-    {
-      "station": "Peralanda",
-      "distance": 17.077,
-      "keyline": "P1"
-    },
-    {
-      "station": "Kandana",
-      "distance": 18.829,
-      "keyline": "P2"
-    },
-    {
-      "station": "Kapuwatte",
-      "distance": 20.556,
-      "keyline": "P3"
-    },
-    {
-      "station": "Ja-Ela",
-      "distance": 22.153,
-      "keyline": "P4"
-    },
-    {
-      "station": "Tudella",
-      "distance": 23.934,
-      "keyline": "P5"
-    },
-    {
-      "station": "Kudahakapola",
-      "distance": 25.18,
-      "keyline": "P6"
-    },
-    {
-      "station": "Alawatupitiya",
-      "distance": 26.503,
-      "keyline": "P7"
-    },
-    {
-      "station": "Seeduwa",
-      "distance": 28.056,
-      "keyline": "P8"
-    },
-    {
-      "station": "Liyanagemulla",
-      "distance": 30.124,
-      "keyline": "P9"
-    },
-    {
-      "station": "Katunayaka Airport",
-      "distance": 33.439,
-      "keyline": "P10"
-    },
-    {
-      "station": "Katunayake",
-      "distance": 32.447,
-      "keyline": "P11"
-    },
-    {
-      "station": "Trade Zoone",
-      "distance": 32.33,
-      "keyline": "P12"
-    },
-    {
-      "station": "Kurana",
-      "distance": 35.31,
-      "keyline": "P13"
-    },
-    {
-      "station": "Negombo",
-      "distance": 38.85,
-      "keyline": "P14"
-    },
-    {
-      "station": "kattuwa",
-      "distance": 42.138,
-      "keyline": "P15"
-    },
-    {
-      "station": "Kochchikade",
-      "distance": 45.048,
-      "keyline": "P16"
-    },
-    {
-      "station": "Waikkala",
-      "distance": 46.645,
-      "keyline": "P17"
-    },
-    {
-      "station": "Bolawatte",
-      "distance": 48.879,
-      "keyline": "P18"
-    },
-    {
-      "station": "Borelessa",
-      "distance": 51.377,
-      "keyline": "P19"
-    },
-    {
-      "station": "Lunuwila",
-      "distance": 54.354,
-      "keyline": "P20"
-    },
-    {
-      "station": "Tummodara",
-      "distance": 59.321,
-      "keyline": "P21"
-    },
-    {
-      "station": "Nattandiya",
-      "distance": 62.196,
-      "keyline": "P22"
-    },
-    {
-      "station": "Walahapitiya",
-      "distance": 65.157,
-      "keyline": "P23"
-    },
-    {
-      "station": "Kudawewa",
-      "distance": 67.781,
-      "keyline": "P24"
-    },
-    {
-      "station": "Nelumpokuna",
-      "distance": 70.691,
-      "keyline": "P25"
-    },
-    {
-      "station": "Madampe",
-      "distance": 71.996,
-      "keyline": "P26"
-    },
-    {
-      "station": "Kakkapalliya",
-      "distance": 76.422,
-      "keyline": "P27"
-    },
-    {
-      "station": "Sawarana",
-      "distance": 79.658,
-      "keyline": "P28"
-    },
-    {
-      "station": "Chilaw",
-      "distance": 82.462,
-      "keyline": "P29"
-    },
-    {
-      "station": "Manuwangama",
-      "distance": 88.84,
-      "keyline": "P30"
-    },
-    {
-      "station": "Bangadeniya",
-      "distance": 91.693,
-      "keyline": "P31"
-    },
-    {
-      "station": "Arachchikattuwa",
-      "distance": 96.18,
-      "keyline": "P32"
-    },
-    {
-      "station": "Anawilundawa",
-      "distance": 99.7,
-      "keyline": "P33"
-    },
-    {
-      "station": "Battaluoya",
-      "distance": 101.926,
-      "keyline": "P34"
-    },
-    {
-      "station": "Pulachchikulam",
-      "distance": 105.318,
-      "keyline": "P35"
-    },
-    {
-      "station": "Mundal",
-      "distance": 109.771,
-      "keyline": "P36"
-    },
-    {
-      "station": "Mangalaeliya",
-      "distance": 116.727,
-      "keyline": "P37"
-    },
-    {
-      "station": "Madurankuliya",
-      "distance": 121.671,
-      "keyline": "P38"
-    },
-    {
-      "station": "Erukkalam pendu",
-      "distance": 128.9,
-      "keyline": "P39"
-    },
-    {
-      "station": "Palavi",
-      "distance": 130.465,
-      "keyline": "P40"
-    },
-    {
-      "station": "Thilladiya",
-      "distance": 132.264,
-      "keyline": "P41"
-    },
-    {
-      "station": "Puttalam",
-      "distance": 135.119,
-      "keyline": "P42"
-    },
-    {
-      "station": "Noor Nagar",
-      "distance": 139.095,
-      "keyline": "P43"
-    },
-    {
-      "station": "Karadipuwar",
-      "distance": 147.803,
-      "keyline": "P44"
-    },
-    {
-      "station": "Periyanagavillu",
-      "distance": 158.596,
-      "keyline": "P45"
-    }
-  ]
+  {
+    "station": "Colombo Fort",
+    "distance": 0,
+    "keyline": "00"
+  },
+  {
+    "station": "Maradana",
+    "distance": 1.9,
+    "keyline": "M1"
+  },
+  {
+    "station": "Dematagoda",
+    "distance": 3.668,
+    "keyline": "M2"
+  },
+  {
+    "station": "Kelaniya",
+    "distance": 6.873,
+    "keyline": "M3"
+  },
+  {
+    "station": "Wanawasala",
+    "distance": 8.676,
+    "keyline": "M4"
+  },
+  {
+    "station": "Hunupitiya",
+    "distance": 10.026,
+    "keyline": "M5"
+  },
+  {
+    "station": "Enderamulla",
+    "distance": 11.699,
+    "keyline": "M6"
+  },
+  {
+    "station": "Horape",
+    "distance": 14.043,
+    "keyline": "M7"
+  },
+  {
+    "station": "Ragama",
+    "distance": 15.546,
+    "keyline": "M8",
+    "isJunction": "P0"
+  },
+  {
+    "station": "Walpola",
+    "distance": 18.116,
+    "keyline": "M9"
+  },
+  {
+    "station": "Batuwatte",
+    "distance": 19.083,
+    "keyline": "M10"
+  },
+  {
+    "station": "Bulugahagoda",
+    "distance": 20.731,
+    "keyline": "M11"
+  },
+  {
+    "station": "Ganemulla",
+    "distance": 22.522,
+    "keyline": "M12"
+  },
+  {
+    "station": "Yagoda",
+    "distance": 24.324,
+    "keyline": "M13"
+  },
+  {
+    "station": "Gampaha",
+    "distance": 27.538,
+    "keyline": "M14"
+  },
+  {
+    "station": "Daraluwa",
+    "distance": 29.921,
+    "keyline": "M15"
+  },
+  {
+    "station": "Bemmulla",
+    "distance": 31.905,
+    "keyline": "M16"
+  },
+  {
+    "station": "Magelegoda",
+    "distance": 34.164,
+    "keyline": "M17"
+  },
+  {
+    "station": "Heendeniya",
+    "distance": 35.67,
+    "keyline": "M18"
+  },
+  {
+    "station": "Veyangoda",
+    "distance": 37.478,
+    "keyline": "M19"
+  },
+  {
+    "station": "Wandurawa",
+    "distance": 39.331,
+    "keyline": "M20"
+  },
+  {
+    "station": "Keenawala",
+    "distance": 41.627,
+    "keyline": "M21"
+  },
+  {
+    "station": "Pallewala",
+    "distance": 43.913,
+    "keyline": "M22"
+  },
+  {
+    "station": "Ganegoda",
+    "distance": 46.213,
+    "keyline": "M23"
+  },
+  {
+    "station": "Wijayarajadahana",
+    "distance": 49.1,
+    "keyline": "M24"
+  },
+  {
+    "station": "Mirigama",
+    "distance": 50.27,
+    "keyline": "M25"
+  },
+  {
+    "station": "Wilwatte",
+    "distance": 52.108,
+    "keyline": "M26"
+  },
+  {
+    "station": "Botale",
+    "distance": 54.433,
+    "keyline": "M27"
+  },
+  {
+    "station": "Abeypussa",
+    "distance": 56.224,
+    "keyline": "M28"
+  },
+  {
+    "station": "Yattalgoda",
+    "distance": 59.851,
+    "keyline": "M29"
+  },
+  {
+    "station": "Buthgamuwa",
+    "distance": 61.873,
+    "keyline": "M30"
+  },
+  {
+    "station": "Alawwa",
+    "distance": 65.672,
+    "keyline": "M31"
+  },
+  {
+    "station": "Wlakubura",
+    "distance": 69.784,
+    "keyline": "M32"
+  },
+  {
+    "station": "Poplgahawela",
+    "distance": 73.827,
+    "keyline": "M33"
+  },
+  {
+    "station": "Panaleeya",
+    "distance": 77.872,
+    "keyline": "M34"
+  },
+  {
+    "station": "Tismalpola",
+    "distance": 78.954,
+    "keyline": "M35"
+  },
+  {
+    "station": "Yatagama",
+    "distance": 82.555,
+    "keyline": "M36"
+  },
+  {
+    "station": "Rambukkana",
+    "distance": 84.437,
+    "keyline": "M37"
+  },
+  {
+    "station": "Kadigamuwa",
+    "distance": 90.239,
+    "keyline": "M38"
+  },
+  {
+    "station": "Gangoda",
+    "distance": 93.805,
+    "keyline": "M39"
+  },
+  {
+    "station": "Ihalakotte",
+    "distance": 96.081,
+    "keyline": "M40"
+  },
+  {
+    "station": "Balana",
+    "distance": 101.069,
+    "keyline": "M41"
+  },
+  {
+    "station": "Kadugannawa",
+    "distance": 105.537,
+    "keyline": "M42"
+  },
+  {
+    "station": "Pilimatalawa",
+    "distance": 109.446,
+    "keyline": "M43"
+  },
+  {
+    "station": "Peradeniya",
+    "distance": 114.851,
+    "keyline": "M44"
+  },
+  {
+    "station": "Koshinna",
+    "distance": 117.36,
+    "keyline": "M45"
+  },
+  {
+    "station": "Gelioya",
+    "distance": 119.54,
+    "keyline": "M46"
+  },
+  {
+    "station": "Gampola",
+    "distance": 126.931,
+    "keyline": "M47"
+  },
+  {
+    "station": "Tembligala",
+    "distance": 130.873,
+    "keyline": "M48"
+  },
+  {
+    "station": "Ulapone",
+    "distance": 134.306,
+    "keyline": "M49"
+  },
+  {
+    "station": "Nawalapitiya",
+    "distance": 141.522,
+    "keyline": "M50"
+  },
+  {
+    "station": "Inguruoya",
+    "distance": 147.307,
+    "keyline": "M51"
+  },
+  {
+    "station": "Galaboda",
+    "distance": 152.857,
+    "keyline": "M52"
+  },
+  {
+    "station": "Watawala",
+    "distance": 162.1,
+    "keyline": "M53"
+  },
+  {
+    "station": "Ihalawatawala",
+    "distance": 165.15,
+    "keyline": "M54"
+  },
+  {
+    "station": "Rosella",
+    "distance": 167.789,
+    "keyline": "M55"
+  },
+  {
+    "station": "Hatton",
+    "distance": 174.905,
+    "keyline": "M56"
+  },
+  {
+    "station": "Kotagala",
+    "distance": 179.969,
+    "keyline": "M57"
+  },
+  {
+    "station": "Talawakele",
+    "distance": 187.857,
+    "keyline": "M58"
+  },
+  {
+    "station": "watagoda",
+    "distance": 194.296,
+    "keyline": "M59"
+  },
+  {
+    "station": "Greatwestern",
+    "distance": 199.306,
+    "keyline": "M60"
+  },
+  {
+    "station": "Radella",
+    "distance": 202.709,
+    "keyline": "M61"
+  },
+  {
+    "station": "Nanuoya",
+    "distance": 207.056,
+    "keyline": "M62"
+  },
+  {
+    "station": "Perakumpura",
+    "distance": 212.206,
+    "keyline": "M63"
+  },
+  {
+    "station": "Ambewela",
+    "distance": 221.495,
+    "keyline": "M64"
+  },
+  {
+    "station": "Pattipola",
+    "distance": 224.931,
+    "keyline": "M65"
+  },
+  {
+    "station": "Ohiya",
+    "distance": 231.641,
+    "keyline": "M66"
+  },
+  {
+    "station": "Idalgasinna",
+    "distance": 240.563,
+    "keyline": "M67"
+  },
+  {
+    "station": "Haputale",
+    "distance": 247.968,
+    "keyline": "M68"
+  },
+  {
+    "station": "Deyatalawa",
+    "distance": 253.079,
+    "keyline": "M69"
+  },
+  {
+    "station": "Bandarawela",
+    "distance": 259.148,
+    "keyline": "M70"
+  },
+  {
+    "station": "Kinigama",
+    "distance": 261.447,
+    "keyline": "M71"
+  },
+  {
+    "station": "Heeloya",
+    "distance": 265.372,
+    "keyline": "M72"
+  },
+  {
+    "station": "Kitalelle",
+    "distance": 269.73,
+    "keyline": "M73"
+  },
+  {
+    "station": "Elle",
+    "distance": 271.592,
+    "keyline": "M74"
+  },
+  {
+    "station": "Demodara",
+    "distance": 277.717,
+    "keyline": "M75"
+  },
+  {
+    "station": "Uduwara",
+    "distance": 283.222,
+    "keyline": "M76"
+  },
+  {
+    "station": "Haliela",
+    "distance": 286.596,
+    "keyline": "M77"
+  },
+  {
+    "station": "Badulla",
+    "distance": 292.393,
+    "keyline": "M78"
+  },
+  {
+    "station": "Peralanda",
+    "distance": 17.077,
+    "keyline": "P1"
+  },
+  {
+    "station": "Kandana",
+    "distance": 18.829,
+    "keyline": "P2"
+  },
+  {
+    "station": "Kapuwatte",
+    "distance": 20.556,
+    "keyline": "P3"
+  },
+  {
+    "station": "Ja-Ela",
+    "distance": 22.153,
+    "keyline": "P4"
+  },
+  {
+    "station": "Tudella",
+    "distance": 23.934,
+    "keyline": "P5"
+  },
+  {
+    "station": "Kudahakapola",
+    "distance": 25.18,
+    "keyline": "P6"
+  },
+  {
+    "station": "Alawatupitiya",
+    "distance": 26.503,
+    "keyline": "P7"
+  },
+  {
+    "station": "Seeduwa",
+    "distance": 28.056,
+    "keyline": "P8"
+  },
+  {
+    "station": "Liyanagemulla",
+    "distance": 30.124,
+    "keyline": "P9"
+  },
+  {
+    "station": "Katunayaka Airport",
+    "distance": 33.439,
+    "keyline": "P10"
+  },
+  {
+    "station": "Katunayake",
+    "distance": 32.447,
+    "keyline": "P11"
+  },
+  {
+    "station": "Trade Zoone",
+    "distance": 32.33,
+    "keyline": "P12"
+  },
+  {
+    "station": "Kurana",
+    "distance": 35.31,
+    "keyline": "P13"
+  },
+  {
+    "station": "Negombo",
+    "distance": 38.85,
+    "keyline": "P14"
+  },
+  {
+    "station": "kattuwa",
+    "distance": 42.138,
+    "keyline": "P15"
+  },
+  {
+    "station": "Kochchikade",
+    "distance": 45.048,
+    "keyline": "P16"
+  },
+  {
+    "station": "Waikkala",
+    "distance": 46.645,
+    "keyline": "P17"
+  },
+  {
+    "station": "Bolawatte",
+    "distance": 48.879,
+    "keyline": "P18"
+  },
+  {
+    "station": "Borelessa",
+    "distance": 51.377,
+    "keyline": "P19"
+  },
+  {
+    "station": "Lunuwila",
+    "distance": 54.354,
+    "keyline": "P20"
+  },
+  {
+    "station": "Tummodara",
+    "distance": 59.321,
+    "keyline": "P21"
+  },
+  {
+    "station": "Nattandiya",
+    "distance": 62.196,
+    "keyline": "P22"
+  },
+  {
+    "station": "Walahapitiya",
+    "distance": 65.157,
+    "keyline": "P23"
+  },
+  {
+    "station": "Kudawewa",
+    "distance": 67.781,
+    "keyline": "P24"
+  },
+  {
+    "station": "Nelumpokuna",
+    "distance": 70.691,
+    "keyline": "P25"
+  },
+  {
+    "station": "Madampe",
+    "distance": 71.996,
+    "keyline": "P26"
+  },
+  {
+    "station": "Kakkapalliya",
+    "distance": 76.422,
+    "keyline": "P27"
+  },
+  {
+    "station": "Sawarana",
+    "distance": 79.658,
+    "keyline": "P28"
+  },
+  {
+    "station": "Chilaw",
+    "distance": 82.462,
+    "keyline": "P29"
+  },
+  {
+    "station": "Manuwangama",
+    "distance": 88.84,
+    "keyline": "P30"
+  },
+  {
+    "station": "Bangadeniya",
+    "distance": 91.693,
+    "keyline": "P31"
+  },
+  {
+    "station": "Arachchikattuwa",
+    "distance": 96.18,
+    "keyline": "P32"
+  },
+  {
+    "station": "Anawilundawa",
+    "distance": 99.7,
+    "keyline": "P33"
+  },
+  {
+    "station": "Battaluoya",
+    "distance": 101.926,
+    "keyline": "P34"
+  },
+  {
+    "station": "Pulachchikulam",
+    "distance": 105.318,
+    "keyline": "P35"
+  },
+  {
+    "station": "Mundal",
+    "distance": 109.771,
+    "keyline": "P36"
+  },
+  {
+    "station": "Mangalaeliya",
+    "distance": 116.727,
+    "keyline": "P37"
+  },
+  {
+    "station": "Madurankuliya",
+    "distance": 121.671,
+    "keyline": "P38"
+  },
+  {
+    "station": "Erukkalam pendu",
+    "distance": 128.9,
+    "keyline": "P39"
+  },
+  {
+    "station": "Palavi",
+    "distance": 130.465,
+    "keyline": "P40"
+  },
+  {
+    "station": "Thilladiya",
+    "distance": 132.264,
+    "keyline": "P41"
+  },
+  {
+    "station": "Puttalam",
+    "distance": 135.119,
+    "keyline": "P42"
+  },
+  {
+    "station": "Noor Nagar",
+    "distance": 139.095,
+    "keyline": "P43"
+  },
+  {
+    "station": "Karadipuwar",
+    "distance": 147.803,
+    "keyline": "P44"
+  },
+  {
+    "station": "Periyanagavillu",
+    "distance": 158.596,
+    "keyline": "P45"
+  },
+  {
+    "station": "Secretartat Halt",
+    "distance": 0.666,
+    "keyline": "C1"
+  },
+  {
+    "station": "Kompnnavidiya",
+    "distance": 1.72,
+    "keyline": "C2"
+  },
+  {
+    "station": "Kollupitiya",
+    "distance": 3.108,
+    "keyline": "C3"
+  },
+  {
+    "station": "Bambalapitiya",
+    "distance": 5.125,
+    "keyline": "C4"
+  },
+  {
+    "station": "wellawatte",
+    "distance": 7.245,
+    "keyline": "C5"
+  },
+  {
+    "station": "Dehiwala",
+    "distance": 9.957,
+    "keyline": "C6"
+  },
+  {
+    "station": "Mount Laviniya",
+    "distance": 12.211,
+    "keyline": "C7"
+  },
+  {
+    "station": "Rathmalana",
+    "distance": 14.01,
+    "keyline": "C8"
+  },
+  {
+    "station": "Angulana",
+    "distance": 15.939,
+    "keyline": "C9"
+  },
+  {
+    "station": "Lunawa",
+    "distance": 17.366,
+    "keyline": "C10"
+  },
+  {
+    "station": "Moratuwa",
+    "distance": 18.949,
+    "keyline": "C11"
+  },
+  {
+    "station": "Koralawella",
+    "distance": 20.731,
+    "keyline": "C12"
+  },
+  {
+    "station": "Egodauyana",
+    "distance": 22.563,
+    "keyline": "C13"
+  },
+  {
+    "station": "Panadura",
+    "distance": 26.249,
+    "keyline": "C14"
+  },
+  {
+    "station": "Pinwatte",
+    "distance": 29.467,
+    "keyline": "C15"
+  },
+  {
+    "station": "Wadduwa",
+    "distance": 32.461,
+    "keyline": "C16"
+  },
+  {
+    "station": "Train Halt 01",
+    "distance": 36.052,
+    "keyline": "C17"
+  },
+  {
+    "station": "Kalutara North",
+    "distance": 39.868,
+    "keyline": "C18"
+  },
+  {
+    "station": "Kaluthara South",
+    "distance": 41.857,
+    "keyline": "C19"
+  },
+  {
+    "station": "Katukurunda",
+    "distance": 44.667,
+    "keyline": "C20"
+  },
+  {
+    "station": "Payagala North",
+    "distance": 48.04,
+    "keyline": "C21"
+  },
+  {
+    "station": "Payagala south",
+    "distance": 49.256,
+    "keyline": "C22"
+  },
+  {
+    "station": "Maggona",
+    "distance": 51.151,
+    "keyline": "C23"
+  },
+  {
+    "station": "Beruwala",
+    "distance": 54.326,
+    "keyline": "C24"
+  },
+  {
+    "station": "Hettimulla",
+    "distance": 56.507,
+    "keyline": "C25"
+  },
+  {
+    "station": "Aluthgama",
+    "distance": 59.661,
+    "keyline": "C26"
+  },
+  {
+    "station": "Bentota",
+    "distance": 60.958,
+    "keyline": "C27"
+  },
+  {
+    "station": "Induruwa",
+    "distance": 64.939,
+    "keyline": "C28"
+  },
+  {
+    "station": "Mha Induruwa",
+    "distance": 67.629,
+    "keyline": "C29"
+  },
+  {
+    "station": "kosgoda",
+    "distance": 71.067,
+    "keyline": "C30"
+  },
+  {
+    "station": "Piyagama",
+    "distance": 72.516,
+    "keyline": "C31"
+  },
+  {
+    "station": "Ahungalle",
+    "distance": 73.984,
+    "keyline": "C32"
+  },
+  {
+    "station": "Patagamgoda",
+    "distance": 76.1,
+    "keyline": "C33"
+  },
+  {
+    "station": "Balapitiya",
+    "distance": 78.205,
+    "keyline": "C34"
+  },
+  {
+    "station": "Andadola",
+    "distance": 79.73,
+    "keyline": "C35"
+  },
+  {
+    "station": "Kandegoda",
+    "distance": 81.456,
+    "keyline": "C36"
+  },
+  {
+    "station": "Ambalangoda",
+    "distance": 83.127,
+    "keyline": "C37"
+  },
+  {
+    "station": "Madampagama",
+    "distance": 85.859,
+    "keyline": "C38"
+  },
+  {
+    "station": "Akurala",
+    "distance": 87.82,
+    "keyline": "C39"
+  },
+  {
+    "station": "Kahawa",
+    "distance": 89.292,
+    "keyline": "C40"
+  },
+  {
+    "station": "Telwatte",
+    "distance": 91.967,
+    "keyline": "C41"
+  },
+  {
+    "station": "Seenigama",
+    "distance": 92.72,
+    "keyline": "C42"
+  },
+  {
+    "station": "Hikkaduwa",
+    "distance": 95.128,
+    "keyline": "C43"
+  },
+  {
+    "station": "Thiranagama",
+    "distance": 97.876,
+    "keyline": "C44"
+  },
+  {
+    "station": "Kumarakanda",
+    "distance": 99.596,
+    "keyline": "C45"
+  },
+  {
+    "station": "Dodanduwa",
+    "distance": 101.525,
+    "keyline": "C46"
+  },
+  {
+    "station": "Rathgama",
+    "distance": 102.55,
+    "keyline": "C47"
+  },
+  {
+    "station": "Boossa",
+    "distance": 105.738,
+    "keyline": "C48"
+  },
+  {
+    "station": "Ginthota",
+    "distance": 108.301,
+    "keyline": "C49"
+  },
+  {
+    "station": "Piyadigama",
+    "distance": 109.975,
+    "keyline": "C50"
+  },
+  {
+    "station": "Richmond Hill",
+    "distance": 111.407,
+    "keyline": "C51"
+  },
+  {
+    "station": "Galle",
+    "distance": 113.88,
+    "keyline": "C52"
+  },
+  {
+    "station": "Katugoda",
+    "distance": 118.269,
+    "keyline": "C53"
+  },
+  {
+    "station": "Unawatuna",
+    "distance": 119.519,
+    "keyline": "C54"
+  },
+  {
+    "station": "Taple",
+    "distance": 124.339,
+    "keyline": "C55"
+  },
+  {
+    "station": "Habaraduwa",
+    "distance": 127.383,
+    "keyline": "C56"
+  },
+  {
+    "station": "Koggala",
+    "distance": 129.1,
+    "keyline": "C57"
+  },
+  {
+    "station": "Kathaluwa",
+    "distance": 131.285,
+    "keyline": "C58"
+  },
+  {
+    "station": "Ahangama",
+    "distance": 134.159,
+    "keyline": "C59"
+  },
+  {
+    "station": "Midigama",
+    "distance": 137.657,
+    "keyline": "C60"
+  },
+  {
+    "station": "Kumbalgama",
+    "distance": 139.196,
+    "keyline": "C61"
+  },
+  {
+    "station": "weligama",
+    "distance": 142.824,
+    "keyline": "C62"
+  },
+  {
+    "station": "Polwathumodara",
+    "distance": 146.248,
+    "keyline": "C63"
+  },
+  {
+    "station": "Mirissa",
+    "distance": 147.556,
+    "keyline": "C64"
+  },
+  {
+    "station": "Kamburugamuwa",
+    "distance": 151.353,
+    "keyline": "C65"
+  },
+  {
+    "station": "Walgama",
+    "distance": 154.1,
+    "keyline": "C66"
+  },
+  {
+    "station": "Matara",
+    "distance": 156.813,
+    "keyline": "C67"
+  },
+  {
+    "station": "Piliduwa",
+    "distance": 158.1,
+    "keyline": "C68"
+  }
+]
