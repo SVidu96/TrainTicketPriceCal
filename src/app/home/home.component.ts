@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 
   RATE21 = 5.2;
   RATE22 = 4.8;
-  RATE23 = 3.8;
+  RATE23 = 3.4;
   RATE24 = 2.8;
   RATE25 = 2.2;
 
@@ -63,6 +63,7 @@ export class HomeComponent implements OnInit {
   toStation = new FormControl('', Validators.required);
   ticketClass= new FormControl('', Validators.required);
   ticketType = new FormControl('', Validators.required);
+  //testInput  = new FormControl('');
 
   // calculatorForm = new FormGroup({
     
@@ -95,11 +96,13 @@ export class HomeComponent implements OnInit {
 
 
   getPrice() {
-    debugger
+    //debugger
     this.valDistance = 0.0;
     this.initData()
     this.valDistance = this.getDistance(this.valFromStation, this.valToStation)
-    this.valTicketPrice = this.calculatePrice() ?? 0.0;
+    this.valTicketPrice = this.calculatePrice(this.valDistance) ?? 0.0;
+
+    //console.log(this.testInput.value +"----"+ this.calculatePrice(parseFloat(this.testInput.value?.toString()??"0.0")))
 
 
   }
@@ -114,24 +117,56 @@ export class HomeComponent implements OnInit {
   }
 
   getDistance(fromStation: Station, toStation: Station): number {
-    if (fromStation.keyline == "00" || toStation.keyline == "00") //Include Fort one of the stations
+    if (fromStation?.keyline == "00" || toStation?.keyline == "00") //Include Fort one of the stations
     {
-      return (Math.abs(fromStation.distance - toStation.distance))
+      return (Math.abs(fromStation?.distance - toStation?.distance))
     }
-    else if (fromStation.keyline.charAt(0) == toStation.keyline.charAt(0)) //same line
+    else if (fromStation?.keyline.charAt(0) == toStation?.keyline.charAt(0)) //same line
     {
-      return (Math.abs(fromStation.distance - toStation.distance))
-    } else return 0.0
+      return (Math.abs(fromStation?.distance - toStation?.distance))
+    } else if(fromStation?.keyline.charAt(0) != toStation?.keyline.charAt(0)){
+      //debugger
+      let zeroStation = new Station();
+      this.Stations.forEach(element => {
+        if(element.keyline=="00"){
+          zeroStation = element;
+        }
+      });
+
+      let junctionStation = null
+
+      this.Stations.forEach(element=>{
+        if((fromStation?.keyline.charAt(0)==element?.isJunction?.charAt(0))){
+          junctionStation = new Station();
+          junctionStation = element;
+        }
+      })
+
+      if(junctionStation == null){
+        this.Stations.forEach(element=>{
+          if((toStation?.keyline.charAt(0)==element?.isJunction?.charAt(0))){
+            junctionStation = new Station();
+            junctionStation = element;
+          }
+        })
+      }
+      if(junctionStation == null) junctionStation = zeroStation
+
+      return Math.abs((fromStation.distance + toStation.distance) - Math.abs(junctionStation.distance - zeroStation.distance))
+
+    }
+    
+    else return 0.0
   }
 
-  calculatePrice() {
+  calculatePrice(distance:number) {
     let ticketPrice = 0.0;
     if (this.valTicketClass == "1") {
-      ticketPrice = this.calFirstClass(this.valDistance)
+      ticketPrice = this.calFirstClass(distance)
     } else if (this.valTicketClass == "2") {
-      ticketPrice = this.calSecondClass(this.valDistance)
+      ticketPrice = this.calSecondClass(distance)
     } else if (this.valTicketClass == "3") {
-      ticketPrice = this.calThirdClass(this.valDistance)
+      ticketPrice = this.calThirdClass(distance)
     }
 
     if (this.valTicketType == "1") {
@@ -154,10 +189,10 @@ export class HomeComponent implements OnInit {
 
     var price = 0.0
     if (distance <= this.DIST1) price = distance * this.RATE11
-    else if (distance <= this.DIST2) price = (distance - this.DIST1) * this.RATE12 + this.RATE11 * this.DIST1
-    else if (distance <= this.DIST3) price = (distance - this.DIST2 - this.DIST1) * this.RATE13 + this.RATE11 * this.DIST1 + this.RATE12 * (this.DIST2 - this.DIST1)
-    else if (distance <= this.DIST4) price = (distance - this.DIST3 - this.DIST2) * this.RATE14 + this.RATE11 * this.DIST1 + this.RATE12 * (this.DIST2 - this.DIST1) + this.RATE13 * (this.DIST3 - this.DIST2)
-    else if (distance > this.DIST4) price = (distance - this.DIST4 - this.DIST3) * this.RATE15 + this.RATE11 * this.DIST1 + this.RATE12 * (this.DIST2 - this.DIST1) + this.RATE13 * (this.DIST3 - this.DIST2) + this.RATE14 * (this.DIST4 - this.DIST3)
+    else if (distance <= this.DIST2) price = ((distance - this.DIST1) * this.RATE12) + (this.RATE11 * this.DIST1)
+    else if (distance <= this.DIST3) price = ((distance - this.DIST2) * this.RATE13) + (this.RATE11 * this.DIST1) + (this.RATE12 * (this.DIST2 - this.DIST1))
+    else if (distance <= this.DIST4) price = ((distance - this.DIST3) * this.RATE14) + (this.RATE11 * this.DIST1) + (this.RATE12 * (this.DIST2 - this.DIST1)) + (this.RATE13 * (this.DIST3 - this.DIST2))
+    else if (distance > this.DIST4)  price = ((distance - this.DIST4) * this.RATE15) + (this.RATE11 * this.DIST1) + (this.RATE12 * (this.DIST2 - this.DIST1)) + (this.RATE13 * (this.DIST3 - this.DIST2)) + (this.RATE14 * (this.DIST4-this.DIST3))
 
     if (price > 0 && price <= 100) {
       return 100;
@@ -179,30 +214,30 @@ export class HomeComponent implements OnInit {
 
     var price = 0.0
     if (distance <= this.DIST1) price = distance * this.RATE21
-    else if (distance <= this.DIST2) price = (distance - this.DIST1) * this.RATE22 + this.RATE21 * this.DIST1
-    else if (distance <= this.DIST3) price = (distance - this.DIST2 - this.DIST1) * this.RATE23 + this.RATE21 * this.DIST1 + this.RATE22 * (this.DIST2 - this.DIST1)
-    else if (distance <= this.DIST4) price = (distance - this.DIST3 - this.DIST2) * this.RATE24 + this.RATE21 * this.DIST1 + this.RATE22 * (this.DIST2 - this.DIST1) + this.RATE23 * (this.DIST3 - this.DIST2)
-    else if (distance > this.DIST4) price = (distance - this.DIST4 - this.DIST3) * this.RATE25 + this.RATE21 * this.DIST1 + this.RATE22 * (this.DIST2 - this.DIST1) + this.RATE23 * (this.DIST3 - this.DIST2) + this.RATE24 * (this.DIST4 - this.DIST3)
-
+    else if (distance <= this.DIST2) price = ((distance - this.DIST1) * this.RATE22) + (this.RATE21 * this.DIST1)
+    else if (distance <= this.DIST3) price = ((distance - this.DIST2) * this.RATE23) + (this.RATE21 * this.DIST1) + (this.RATE22 * (this.DIST2 - this.DIST1))
+    else if (distance <= this.DIST4) price = ((distance - this.DIST3) * this.RATE24) + (this.RATE21 * this.DIST1) + (this.RATE22 * (this.DIST2 - this.DIST1)) + (this.RATE23 * (this.DIST3 - this.DIST2))
+    else if (distance > this.DIST4)  price = ((distance - this.DIST4) * this.RATE25) + (this.RATE21 * this.DIST1) + (this.RATE22 * (this.DIST2 - this.DIST1)) + (this.RATE23 * (this.DIST3 - this.DIST2)) + (this.RATE24 * (this.DIST4-this.DIST3))
+    //console.log(price + "second")
     return price != 0.0 ? this.ceiling(price, 50) : 0.0
 
   }
 
   calThirdClass(distance: number) {
     /** Third Class
-    * <=10   - *2.6
-    * <=50   - *2.4
-    * <=100  - *1.7
-    * <=200  - *1.4
+    * 0<=10   - *2.6
+    * 11<=50   - *2.4
+    * 51<=100  - *1.7
+    * 101<=200  - *1.4
     * >200   - *1.1
     */
-
+//debugger
     var price = 0.0
     if (distance <= this.DIST1) price = distance * this.RATE31
-    else if (distance <= this.DIST2) price = (distance - this.DIST1) * this.RATE32 + this.RATE31 * this.DIST1
-    else if (distance <= this.DIST3) price = (distance - this.DIST2 - this.DIST1) * this.RATE33 + this.RATE31 * this.DIST1 + this.RATE32 * (this.DIST2 - this.DIST1)
-    else if (distance <= this.DIST4) price = (distance - this.DIST3 - this.DIST2) * this.RATE34 + this.RATE31 * this.DIST1 + this.RATE32 * (this.DIST2 - this.DIST1) + this.RATE33 * (this.DIST3 - this.DIST2)
-    else if (distance > this.DIST4) price = (distance - this.DIST4 - this.DIST3) * this.RATE35 + this.RATE31 * this.DIST1 + this.RATE32 * (this.DIST2 - this.DIST1) + this.RATE33 * (this.DIST3 - this.DIST2) + this.RATE34 * (this.DIST4 - this.DIST3)
+    else if (distance <= this.DIST2) price = ((distance - this.DIST1) * this.RATE32) + (this.RATE31 * this.DIST1)
+    else if (distance <= this.DIST3) price = ((distance - this.DIST2) * this.RATE33) + (this.RATE31 * this.DIST1) + (this.RATE32 * (this.DIST2 - this.DIST1))
+    else if (distance <= this.DIST4) price = ((distance - this.DIST3) * this.RATE34) + (this.RATE31 * this.DIST1) + (this.RATE32 * (this.DIST2 - this.DIST1)) + (this.RATE33 * (this.DIST3 - this.DIST2))
+    else if (distance > this.DIST4)  price = ((distance - this.DIST4) * this.RATE35) + (this.RATE31 * this.DIST1) + (this.RATE32 * (this.DIST2 - this.DIST1)) + (this.RATE33 * (this.DIST3 - this.DIST2)) + (this.RATE34 * (this.DIST4-this.DIST3))
 
     return price != 0.0 ? this.ceiling(price, 20) : 0.0
 

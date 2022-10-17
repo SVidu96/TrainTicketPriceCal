@@ -2,7 +2,8 @@
   {
     "station": "Colombo Fort",
     "distance": 0,
-    "keyline": "00"
+    "keyline": "00",
+    "isJunction": "C0"
   },
   {
     "station": "Maradana",
