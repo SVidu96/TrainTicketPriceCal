@@ -167,7 +167,7 @@
     "keyline": "M32"
   },
   {
-    "station": "Poplgahawela",
+    "station": "Polgahawela",
     "distance": 73.827,
     "keyline": "M33"
   },
@@ -224,7 +224,8 @@
   {
     "station": "Peradeniya",
     "distance": 114.851,
-    "keyline": "M44"
+    "keyline": "M44",
+    "isJunction":"K0"
   },
   {
     "station": "Koshinna",
@@ -297,7 +298,7 @@
     "keyline": "M58"
   },
   {
-    "station": "watagoda",
+    "station": "Watagoda",
     "distance": 194.296,
     "keyline": "M59"
   },
@@ -467,7 +468,7 @@
     "keyline": "P14"
   },
   {
-    "station": "kattuwa",
+    "station": "Kattuwa",
     "distance": 42.138,
     "keyline": "P15"
   },
@@ -642,7 +643,7 @@
     "keyline": "C4"
   },
   {
-    "station": "wellawatte",
+    "station": "Wellawatte",
     "distance": 7.245,
     "keyline": "C5"
   },
@@ -767,7 +768,7 @@
     "keyline": "C29"
   },
   {
-    "station": "kosgoda",
+    "station": "Kosgoda",
     "distance": 71.067,
     "keyline": "C30"
   },
@@ -927,7 +928,7 @@
     "keyline": "C61"
   },
   {
-    "station": "weligama",
+    "station": "Weligama",
     "distance": 142.824,
     "keyline": "C62"
   },
@@ -960,5 +961,55 @@
     "station": "Piliduwa",
     "distance": 158.1,
     "keyline": "C68"
+  },
+  {
+    "station": "Sarasaviuyana",
+    "distance": 115.686,
+    "keyline": "K1"
+  },
+  {
+    "station": "Kandy",
+    "distance": 120.737,
+    "keyline": "K2"
+  },
+  {
+    "station": "Mahaiyawa",
+    "distance": 122.402,
+    "keyline": "K3"
+  },
+  {
+    "station": "Katugastota",
+    "distance": 126.285,
+    "keyline": "K4"
+  },
+  {
+    "station": "Udatalawinna",
+    "distance": 128.784,
+    "keyline": "K5"
+  },
+  {
+    "station": "Wattegama",
+    "distance": 132.889,
+    "keyline": "K6"
+  },
+  {
+    "station": "Pathanpha",
+    "distance": 137.428,
+    "keyline": "K7"
+  },
+  {
+    "station": "Udaththawala",
+    "distance": 141.774,
+    "keyline": "K8"
+  },
+  {
+    "station": "Ukuwela",
+    "distance": 143.018,
+    "keyline": "K9"
+  },
+  {
+    "station": "Matale",
+    "distance": 148.609,
+    "keyline": "K10"
   }
 ]

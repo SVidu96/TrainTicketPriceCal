@@ -1,98 +1,9 @@
-<!-- Todo -->
-<!-- <div class="container">
-    <form class="example-form">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Number</mat-label>
-          <input type="text"
-                 placeholder="Pick one"
-                 aria-label="Number"
-                 matInput
-                 [formControl]="myControl"
-                 [matAutocomplete]="auto">
-          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-              {{option}}
-            </mat-option>
-          </mat-autocomplete>
-        </mat-form-field>
-      </form>
-</div> -->
-
-<!-- <div class="container">
-  <form [formGroup]="calculatorForm">
-
-    <div>
-      <label for="fromStation">From : </label>
-      <select id="fromStation" formControlName="fromStation">
-        <option value="">-Select-</option>
-        <option *ngFor="let station of Stations" [ngValue]="station">{{station.station}}</option>
-      </select>
-    </div>
-
-    <div>
-      <label for="toStation">To : </label>
-      <select id="toStation" formControlName="toStation">
-        <option value="">-Select-</option>
-        <option *ngFor="let station of Stations" [ngValue]="station">{{station.station}}</option>
-      </select>
-    </div>
-    <div>
-      <label for="fclass">1st Class</label>
-      <input type="radio" id="fclass" name="ticketClass" formControlName="ticketClass" value="1">
-      <label for="sclass">2nd Class</label>
-      <input type="radio" id="sclass" name="ticketClass" formControlName="ticketClass" value="2">
-      <label for="tclass">3rd Class</label>
-      <input type="radio" id="tclass" name="ticketClass" formControlName="ticketClass" value="3">
-    </div>
-
-    <div>
-      <label for="normalTicket">Normal Ticket</label>
-      <input type="radio" id="normalTicket" name="ticketType" formControlName="ticketType" value="1">
-      <label for="privateSeason">Private Season</label>
-      <input type="radio" id="privateSeason" name="ticketType" formControlName="ticketType" value="2">
-      <label for="gvtSeason">Government Season</label>
-      <input type="radio" id="gvtSeason" name="ticketType" formControlName="ticketType" value="3">
-    </div>
-
-    <button (click)="getPrice()">Check Price</button>
-  </form>
-
-  <div>{{valTicketPrice}}</div>
-
-</div> -->
-
 <div class="container">
-
-  <!-- <form [formGroup]="calculatorForm"> -->
-
-    <!-- <div class="parent">
-      <div class="div8"> <label for="fclass">1st Class</label>
-        <input type="radio" id="fclass" name="ticketClass" formControlName="ticketClass" value="1"></div>
-      <div class="div9"> <label for="sclass">2nd Class</label>
-        <input type="radio" id="sclass" name="ticketClass" formControlName="ticketClass" value="2"></div>
-      <div class="div10"><label for="tclass">3rd Class</label>
-        <input type="radio" id="tclass" name="ticketClass" formControlName="ticketClass" value="3"> </div>
-
-      <div class="div11">
-        
-      </div>
-      <div class="div12"> <label for="normalTicket">Normal Ticket</label>
-        <input type="radio" id="normalTicket" name="ticketType" formControlName="ticketType" value="1"></div>
-      <div class="div13"><label for="privateSeason">Private Season</label>
-        <input type="radio" id="privateSeason" name="ticketType" formControlName="ticketType" value="2"> </div>
-      <div class="div14"><label for="gvtSeason">School Season</label>
-        <input type="radio" id="gvtSeason" name="ticketType" formControlName="ticketType" value="3"> </div> -->
-      <!-- <div class="div15"><button class="button" (click)="getPrice()">Check Price</button> </div> -->
-      <!-- <div class="div16" *ngIf="valTicketPrice!=0">Rs. {{valTicketPrice}}.00</div>
-    </div> -->
-  <!-- </form> -->
-<!-- </div> -->
-<!-- <input type="text" [formControl]="testInput"> -->
 
 <div class="cont">
 <form class="example-form">
   <mat-card style="margin-bottom:20px; text-align: center;" >
-    <mat-card-title>Train Price Calculator</mat-card-title>
+    <mat-card-title>Train Ticket Price Calculator</mat-card-title>
    </mat-card>
   <mat-form-field class="example-full-width" appearance="fill">
     <mat-label>From Station</mat-label>
