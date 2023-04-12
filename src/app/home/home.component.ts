@@ -127,7 +127,7 @@ export class HomeComponent implements OnInit {
 
   async getAPIDistance(fromStation: SlrStations, toStation: SlrStations) {
     this.apiDistance = 0;
-    const url = 'http://www.railway.gov.lk/web/index2.php?option=com_gettot&task=gettot&to=' + toStation.stationcode + '&from=' + fromStation.stationcode + '&amount=&special_items=4&train_type=1&lang=en';
+    const url = 'https://www.railway.gov.lk/web/index2.php?option=com_gettot&task=gettot&to=' + toStation.stationcode + '&from=' + fromStation.stationcode + '&amount=&special_items=4&train_type=1&lang=en';
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const finalUrl = url;
     const body = {
