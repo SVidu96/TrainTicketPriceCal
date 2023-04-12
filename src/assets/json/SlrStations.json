@@ -1,0 +1,1126 @@
+[
+    {
+      "stationcode": 4148,
+      "station": "ABANPOLA"
+    },
+    {
+      "stationcode": 7250,
+      "station": "AGPOPURA"
+    },
+    {
+      "stationcode": 8136,
+      "station": "AHANGAMA"
+    },
+    {
+      "stationcode": 8090,
+      "station": "AKURALA"
+    },
+    {
+      "stationcode": 1064,
+      "station": "ALAWWA"
+    },
+    {
+      "stationcode": 3025,
+      "station": "ALAWWATUPIYIYA"
+    },
+    {
+      "stationcode": 8062,
+      "station": "ALUTHGAMA"
+    },
+    {
+      "stationcode": 8085,
+      "station": "AMBALANGODA"
+    },
+    {
+      "stationcode": 1054,
+      "station": "AMBEPUSSA"
+    },
+    {
+      "stationcode": 1220,
+      "station": "AMBEWELA"
+    },
+    {
+      "stationcode": 3097,
+      "station": "ANAVILUNDAWA"
+    },
+    {
+      "stationcode": 8018,
+      "station": "ANGULANA"
+    },
+    {
+      "stationcode": 4200,
+      "station": "ANU.NEW TOWN"
+    },
+    {
+      "stationcode": 4203,
+      "station": "ANURA'PURA"
+    },
+    {
+      "stationcode": 3094,
+      "station": "ARACHIKATTUWA"
+    },
+    {
+      "stationcode": 8076,
+      "station": "AUNGALLA"
+    },
+    {
+      "stationcode": 9059,
+      "station": "AVISSAWELLA"
+    },
+    {
+      "stationcode": 6174,
+      "station": "AWUKANA"
+    },
+    {
+      "stationcode": 1290,
+      "station": "BADULLA"
+    },
+    {
+      "stationcode": 1099,
+      "station": "BALANA"
+    },
+    {
+      "stationcode": 8080,
+      "station": "BALAPITIYA"
+    },
+    {
+      "stationcode": 8007,
+      "station": "BAMBALAPITIYA"
+    },
+    {
+      "stationcode": 1257,
+      "station": "BANDARAWELA"
+    },
+    {
+      "stationcode": 3090,
+      "station": "BANGADENIYA"
+    },
+    {
+      "stationcode": 9002,
+      "station": "BASE LINE"
+    },
+    {
+      "stationcode": 6348,
+      "station": "BATICALOA"
+    },
+    {
+      "stationcode": 3100,
+      "station": "BATTULUOYA"
+    },
+    {
+      "stationcode": 1017,
+      "station": "BATUWATTA"
+    },
+    {
+      "stationcode": 1030,
+      "station": "BEMMULLA"
+    },
+    {
+      "stationcode": 8063,
+      "station": "BENTOTA"
+    },
+    {
+      "stationcode": 8056,
+      "station": "BERUWALA"
+    },
+    {
+      "stationcode": 3047,
+      "station": "BOLAWATTA"
+    },
+    {
+      "stationcode": 8108,
+      "station": "BOOSSA"
+    },
+    {
+      "stationcode": 3049,
+      "station": "BORALESSA"
+    },
+    {
+      "stationcode": 1053,
+      "station": "BOTALE"
+    },
+    {
+      "stationcode": 1060,
+      "station": "BUJJOMUWA"
+    },
+    {
+      "stationcode": 1019,
+      "station": "BULUGAHAGODA"
+    },
+    {
+      "stationcode": 3091,
+      "station": "CHILAW"
+    },
+    {
+      "stationcode": 7288,
+      "station": "CHINA BAY"
+    },
+    {
+      "stationcode": 9004,
+      "station": "COTTA ROAD"
+    },
+    {
+      "stationcode": 1028,
+      "station": "DARALUWA"
+    },
+    {
+      "stationcode": 8012,
+      "station": "DEHIWAL"
+    },
+    {
+      "stationcode": 1002,
+      "station": "DEMATAGODA"
+    },
+    {
+      "stationcode": 1276,
+      "station": "DEMODARA"
+    },
+    {
+      "stationcode": 6328,
+      "station": "DEVAPURAM"
+    },
+    {
+      "stationcode": 1251,
+      "station": "DIYATALAWA"
+    },
+    {
+      "stationcode": 8103,
+      "station": "DODANDUWA"
+    },
+    {
+      "stationcode": 8024,
+      "station": "EGODA UYANA"
+    },
+    {
+      "stationcode": 1270,
+      "station": "ELLA"
+    },
+    {
+      "stationcode": 1010,
+      "station": "ENDERAMULLA"
+    },
+    {
+      "stationcode": 4247,
+      "station": "ERATTAPRIYAKULAM"
+    },
+    {
+      "stationcode": 6335,
+      "station": "ERAVUR"
+    },
+    {
+      "stationcode": 8000,
+      "station": "COLOMBO FORT"
+    },
+    {
+      "stationcode": 6225,
+      "station": "GAL OYA"
+    },
+    {
+      "stationcode": 1151,
+      "station": "GALABADA"
+    },
+    {
+      "stationcode": 4159,
+      "station": "GALGAMUWA"
+    },
+    {
+      "stationcode": 8116,
+      "station": "GALLE"
+    },
+    {
+      "stationcode": 6262,
+      "station": "GALLELLA"
+    },
+    {
+      "stationcode": 1026,
+      "station": "GAMPAHA"
+    },
+    {
+      "stationcode": 1125,
+      "station": "GAMPOLA"
+    },
+    {
+      "stationcode": 1044,
+      "station": "GANEGODA"
+    },
+    {
+      "stationcode": 1021,
+      "station": "GANEMULLA"
+    },
+    {
+      "stationcode": 4115,
+      "station": "GANEWATTA"
+    },
+    {
+      "stationcode": 1092,
+      "station": "GANGODA"
+    },
+    {
+      "stationcode": 1118,
+      "station": "GELIOYA"
+    },
+    {
+      "stationcode": 8110,
+      "station": "GINTHOTA"
+    },
+    {
+      "stationcode": 4078,
+      "station": "GIRAMBE"
+    },
+    {
+      "stationcode": 9028,
+      "station": "GODAGAMA"
+    },
+    {
+      "stationcode": 1197,
+      "station": "GREAT WESTERN"
+    },
+    {
+      "stationcode": 8129,
+      "station": "HABARADUWA"
+    },
+    {
+      "stationcode": 6208,
+      "station": "HABARANA"
+    },
+    {
+      "stationcode": 1285,
+      "station": "HALI ELA"
+    },
+    {
+      "stationcode": 1246,
+      "station": "HAPUTALE"
+    },
+    {
+      "stationcode": 6221,
+      "station": "HATARESKOTUWA"
+    },
+    {
+      "stationcode": 1173,
+      "station": "HATTON"
+    },
+    {
+      "stationcode": 1263,
+      "station": "HEEL OYA"
+    },
+    {
+      "stationcode": 1034,
+      "station": "HENDENIYAP GODA"
+    },
+    {
+      "stationcode": 8058,
+      "station": "HETTIMULLA"
+    },
+    {
+      "stationcode": 8097,
+      "station": "HIKKADUWA"
+    },
+    {
+      "stationcode": 6242,
+      "station": "HINRAKGODA"
+    },
+    {
+      "stationcode": 4122,
+      "station": "HIRIYALA"
+    },
+    {
+      "stationcode": 9022,
+      "station": "HOMA HOS ROAD"
+    },
+    {
+      "stationcode": 9025,
+      "station": "HOMAGAMA"
+    },
+    {
+      "stationcode": 1012,
+      "station": "HORAPE"
+    },
+    {
+      "stationcode": 6197,
+      "station": "HORIWILA"
+    },
+    {
+      "stationcode": 1008,
+      "station": "HUNUPITIYA"
+    },
+    {
+      "stationcode": 1239,
+      "station": "IDAL GASHINNA"
+    },
+    {
+      "stationcode": 1161,
+      "station": "IHALA WATAWALA"
+    },
+    {
+      "stationcode": 1094,
+      "station": "IHALAKOTTE"
+    },
+    {
+      "stationcode": 8067,
+      "station": "INDURUWA"
+    },
+    {
+      "stationcode": 1145,
+      "station": "INGURUOYA"
+    },
+    {
+      "stationcode": 3020,
+      "station": "JA ELA"
+    },
+    {
+      "stationcode": 6247,
+      "station": "JAYANTIPURAM"
+    },
+    {
+      "stationcode": 6314,
+      "station": "KADADASI NAGAR"
+    },
+    {
+      "stationcode": 1088,
+      "station": "KADIGAMUWA"
+    },
+    {
+      "stationcode": 1104,
+      "station": "KADUGANNAWA"
+    },
+    {
+      "stationcode": 8091,
+      "station": "KAHAWA"
+    },
+    {
+      "stationcode": 3075,
+      "station": "KAKKAPALLIA"
+    },
+    {
+      "stationcode": 6177,
+      "station": "KALAWEWA"
+    },
+    {
+      "stationcode": 6320,
+      "station": "KALKUDAH"
+    },
+    {
+      "stationcode": 8042,
+      "station": "KALU NORTH"
+    },
+    {
+      "stationcode": 8044,
+      "station": "KALU SOUTH"
+    },
+    {
+      "stationcode": 8153,
+      "station": "KAMBURUGAMUWA"
+    },
+    {
+      "stationcode": 3017,
+      "station": "KANDANA"
+    },
+    {
+      "stationcode": 8083,
+      "station": "KANDEGODA"
+    },
+    {
+      "stationcode": 2119,
+      "station": "KANDY"
+    },
+    {
+      "stationcode": 7254,
+      "station": "KANTALE"
+    },
+    {
+      "stationcode": 3019,
+      "station": "KAPUWATTA"
+    },
+    {
+      "stationcode": 8133,
+      "station": "KATALUWA"
+    },
+    {
+      "stationcode": 3040,
+      "station": "KATTUWA"
+    },
+    {
+      "stationcode": 2124,
+      "station": "KATUGASTOTA"
+    },
+    {
+      "stationcode": 8120,
+      "station": "KATUGODA"
+    },
+    {
+      "stationcode": 8047,
+      "station": "KATUKURURNDA"
+    },
+    {
+      "stationcode": 3031,
+      "station": "KATUNAYAKA"
+    },
+    {
+      "stationcode": 1040,
+      "station": "KEENAWALA"
+    },
+    {
+      "stationcode": 6187,
+      "station": "KEKIRAWA"
+    },
+    {
+      "stationcode": 1005,
+      "station": "KELANIYA"
+    },
+    {
+      "stationcode": 1260,
+      "station": "KINIGAMA"
+    },
+    {
+      "stationcode": 9007,
+      "station": "KIRULPONE"
+    },
+    {
+      "stationcode": 1268,
+      "station": "KITAL ELLA"
+    },
+    {
+      "stationcode": 8131,
+      "station": "KOGGALA"
+    },
+    {
+      "stationcode": 3043,
+      "station": "KOICHCHIKADE"
+    },
+    {
+      "stationcode": 8005,
+      "station": "KOLPETTI"
+    },
+    {
+      "stationcode": 8004,
+      "station": "KOMPANNAVIDIYA"
+    },
+    {
+      "stationcode": 6147,
+      "station": "KON WEWA"
+    },
+    {
+      "stationcode": 8023,
+      "station": "KORALAWEELA"
+    },
+    {
+      "stationcode": 9049,
+      "station": "KOSGAMA"
+    },
+    {
+      "stationcode": 8073,
+      "station": "KOSGODA"
+    },
+    {
+      "stationcode": 1115,
+      "station": "KOSHINNA"
+    },
+    {
+      "stationcode": 1178,
+      "station": "KOTAGALA"
+    },
+    {
+      "stationcode": 9019,
+      "station": "KOTTAWA"
+    },
+    {
+      "stationcode": 3023,
+      "station": "KUDAHAKAPALA"
+    },
+    {
+      "stationcode": 3066,
+      "station": "KUDAWEW"
+    },
+    {
+      "stationcode": 8101,
+      "station": "KUMARAKANDA"
+    },
+    {
+      "stationcode": 8142,
+      "station": "KUMBALGAMA"
+    },
+    {
+      "stationcode": 3033,
+      "station": "KURANA"
+    },
+    {
+      "stationcode": 4093,
+      "station": "KURUNEGALA"
+    },
+    {
+      "stationcode": 6250,
+      "station": "LAKSHA UYANA"
+    },
+    {
+      "stationcode": 3028,
+      "station": "LIYAAGE MULLA"
+    },
+    {
+      "stationcode": 8019,
+      "station": "LUNAWA"
+    },
+    {
+      "stationcode": 3052,
+      "station": "LUNUWILA"
+    },
+    {
+      "stationcode": 8088,
+      "station": "MADAMPAGAMA"
+    },
+    {
+      "stationcode": 3070,
+      "station": "MADAMPPE"
+    },
+    {
+      "stationcode": 3120,
+      "station": "MADURANKULIYA"
+    },
+    {
+      "stationcode": 1032,
+      "station": "MAGALEGODA"
+    },
+    {
+      "stationcode": 8053,
+      "station": "MAGGONA"
+    },
+    {
+      "stationcode": 8070,
+      "station": "MAHA INDURUWA"
+    },
+    {
+      "stationcode": 9014,
+      "station": "MAHARAGAMA"
+    },
+    {
+      "stationcode": 2121,
+      "station": "MAHAIYAWA"
+    },
+    {
+      "stationcode": 4137,
+      "station": "MAHO"
+    },
+    {
+      "stationcode": 9021,
+      "station": "MALAPALLA"
+    },
+    {
+      "stationcode": 6268,
+      "station": "MANAMPITIYA"
+    },
+    {
+      "stationcode": 3115,
+      "station": "MANGALAELIYA"
+    },
+    {
+      "stationcode": 3087,
+      "station": "MANUWANGAMA"
+    },
+    {
+      "stationcode": 1000,
+      "station": "MARADANA"
+    },
+    {
+      "stationcode": 2147,
+      "station": "MATALE"
+    },
+    {
+      "stationcode": 8159,
+      "station": "MATARA"
+    },
+    {
+      "stationcode": 4219,
+      "station": "MEDAGAMA"
+    },
+    {
+      "stationcode": 4229,
+      "station": "MEDAVACHCHI"
+    },
+    {
+      "stationcode": 9030,
+      "station": "MEEGODA"
+    },
+    {
+      "stationcode": 8140,
+      "station": "MIDIGAMA"
+    },
+    {
+      "stationcode": 4205,
+      "station": "MIHIN JUNCTION"
+    },
+    {
+      "stationcode": 6234,
+      "station": "MINNERIYA"
+    },
+    {
+      "stationcode": 1048,
+      "station": "MIRIGAMA"
+    },
+    {
+      "stationcode": 8149,
+      "station": "MIRISSA"
+    },
+    {
+      "stationcode": 7267,
+      "station": "MOLLIPOTANA"
+    },
+    {
+      "stationcode": 6158,
+      "station": "MORAGOLLAGAMA"
+    },
+    {
+      "stationcode": 8021,
+      "station": "MORATUWA"
+    },
+    {
+      "stationcode": 8014,
+      "station": "MOUNT LAVINIA"
+    },
+    {
+      "stationcode": 3108,
+      "station": "MUNDAL"
+    },
+    {
+      "stationcode": 4096,
+      "station": "MUTTUGALA"
+    },
+    {
+      "stationcode": 4127,
+      "station": "NAGOLLAGAMA"
+    },
+    {
+      "stationcode": 4089,
+      "station": "NAILIYA"
+    },
+    {
+      "stationcode": 1205,
+      "station": "NANU OYA"
+    },
+    {
+      "stationcode": 9006,
+      "station": "NARAHENPITA"
+    },
+    {
+      "stationcode": 3060,
+      "station": "NATHTHANDIYA"
+    },
+    {
+      "stationcode": 1140,
+      "station": "NAVALAPITIYA"
+    },
+    {
+      "stationcode": 9013,
+      "station": "NAWINNA"
+    },
+    {
+      "stationcode": 6170,
+      "station": "NEEGAMA"
+    },
+    {
+      "stationcode": 3037,
+      "station": "NEGOMBO"
+    },
+    {
+      "stationcode": 3069,
+      "station": "NELUMPOKUNA"
+    },
+    {
+      "stationcode": 9009,
+      "station": "NUGEGODA"
+    },
+    {
+      "stationcode": 1230,
+      "station": "OHIYA"
+    },
+    {
+      "stationcode": 9035,
+      "station": "PADUKKA"
+    },
+    {
+      "stationcode": 3129,
+      "station": "PALAVI"
+    },
+    {
+      "stationcode": 1042,
+      "station": "PALLEWELA"
+    },
+    {
+      "stationcode": 6201,
+      "station": "PALUGASWEWA"
+    },
+    {
+      "stationcode": 8028,
+      "station": "PANADURA"
+    },
+    {
+      "stationcode": 9026,
+      "station": "PANAGODA"
+    },
+    {
+      "stationcode": 1076,
+      "station": "PANALIYA"
+    },
+    {
+      "stationcode": 9017,
+      "station": "PANNIPITIYA"
+    },
+    {
+      "stationcode": 1210,
+      "station": "PARAKUMPURA"
+    },
+    {
+      "stationcode": 4216,
+      "station": "PARASANGAHWEWA"
+    },
+    {
+      "stationcode": 2136,
+      "station": "PATANPAHA"
+    },
+    {
+      "stationcode": 8078,
+      "station": "PATEGAMGODA"
+    },
+    {
+      "stationcode": 1223,
+      "station": "PATTIPOA"
+    },
+    {
+      "stationcode": 8050,
+      "station": "PAYA NORTH"
+    },
+    {
+      "stationcode": 8051,
+      "station": "PAYA SOUTH"
+    },
+    {
+      "stationcode": 1113,
+      "station": "PERADENIA"
+    },
+    {
+      "stationcode": 3015,
+      "station": "PERALANDA"
+    },
+    {
+      "stationcode": 6253,
+      "station": "PERKUM UYANA"
+    },
+    {
+      "stationcode": 8160,
+      "station": "PILADUWA"
+    },
+    {
+      "stationcode": 1108,
+      "station": "PILIMATALAWA"
+    },
+    {
+      "stationcode": 9040,
+      "station": "PINNAWALA"
+    },
+    {
+      "stationcode": 8031,
+      "station": "PINWATTA"
+    },
+    {
+      "stationcode": 8112,
+      "station": "PIYADIGAMA"
+    },
+    {
+      "stationcode": 8074,
+      "station": "PIYAGAMA"
+    },
+    {
+      "stationcode": 8148,
+      "station": "POLWATHUMODARA"
+    },
+    {
+      "stationcode": 1072,
+      "station": "POLGAHGAWELA"
+    },
+    {
+      "stationcode": 6258,
+      "station": "POLONNARUWA"
+    },
+    {
+      "stationcode": 6300,
+      "station": "POONANI"
+    },
+    {
+      "stationcode": 4236,
+      "station": "POONEWA"
+    },
+    {
+      "stationcode": 4084,
+      "station": "POTUHERA"
+    },
+    {
+      "stationcode": 3106,
+      "station": "PULICHCHAKULAMA"
+    },
+    {
+      "stationcode": 3133,
+      "station": "PUTTALAM"
+    },
+    {
+      "stationcode": 9056,
+      "station": "PUWAKPITIYA"
+    },
+    {
+      "stationcode": 1201,
+      "station": "RADELLA"
+    },
+    {
+      "stationcode": 1014,
+      "station": "RAGAMA"
+    },
+    {
+      "stationcode": 1083,
+      "station": "RAMBUKKANA"
+    },
+    {
+      "stationcode": 6154,
+      "station": "RANAMUKGAMA"
+    },
+    {
+      "stationcode": 4140,
+      "station": "RANDENIGAMA"
+    },
+    {
+      "stationcode": 8104,
+      "station": "RATGAMA"
+    },
+    {
+      "stationcode": 8016,
+      "station": "RATMALANA"
+    },
+    {
+      "stationcode": 8113,
+      "station": "RICHMOND HILL"
+    },
+    {
+      "stationcode": 1166,
+      "station": "ROZELLA"
+    },
+    {
+      "stationcode": 4209,
+      "station": "SALIYAPURA"
+    },
+    {
+      "stationcode": 2114,
+      "station": "SARASAVI UYANA"
+    },
+    {
+      "stationcode": 3078,
+      "station": "SAWARANA"
+    },
+    {
+      "stationcode": 8003,
+      "station": "SECARATARIAT HALT"
+    },
+    {
+      "stationcode": 3026,
+      "station": "SEEDUWA"
+    },
+    {
+      "stationcode": 8095,
+      "station": "SEENIGAMA"
+    },
+    {
+      "stationcode": 4168,
+      "station": "SENARATHGAMA"
+    },
+    {
+      "stationcode": 6164,
+      "station": "SIYABALANGAMUWA"
+    },
+    {
+      "stationcode": 4197,
+      "station": "SRIWASTIPURA"
+    },
+    {
+      "stationcode": 4188,
+      "station": "TALAWA"
+    },
+    {
+      "stationcode": 1186,
+      "station": "TALAWAKELE"
+    },
+    {
+      "stationcode": 4079,
+      "station": "TALAWATTEGEDARA"
+    },
+    {
+      "stationcode": 8126,
+      "station": "TALPE"
+    },
+    {
+      "stationcode": 1129,
+      "station": "TAMBILIGALA"
+    },
+    {
+      "stationcode": 4177,
+      "station": "TAMBUTTEGAMA"
+    },
+    {
+      "stationcode": 7273,
+      "station": "TANBALAGAMUWA"
+    },
+    {
+      "stationcode": 8093,
+      "station": "TELWATTA"
+    },
+    {
+      "stationcode": 3132,
+      "station": "TILADIYA"
+    },
+    {
+      "stationcode": 4131,
+      "station": "TIMBIRIYAGEDA"
+    },
+    {
+      "stationcode": 1077,
+      "station": "TISMALPOLA"
+    },
+    {
+      "stationcode": 8038,
+      "station": "TRAIN HOLT"
+    },
+    {
+      "stationcode": 7295,
+      "station": "TRINCO"
+    },
+    {
+      "stationcode": 3022,
+      "station": "TUDEELLA"
+    },
+    {
+      "stationcode": 3057,
+      "station": "TUMMODARA"
+    },
+    {
+      "stationcode": 9012,
+      "station": "UDAHAMULLA"
+    },
+    {
+      "stationcode": 2127,
+      "station": "UDATALAWINNA"
+    },
+    {
+      "stationcode": 2140,
+      "station": "UDATTAWELA"
+    },
+    {
+      "stationcode": 1281,
+      "station": "UDUWARA"
+    },
+    {
+      "stationcode": 2141,
+      "station": "UKUWELA"
+    },
+    {
+      "stationcode": 1132,
+      "station": "ULAPANE"
+    },
+    {
+      "stationcode": 8121,
+      "station": "UNAWATUNA"
+    },
+    {
+      "stationcode": 6317,
+      "station": "VALACHCHENNAI"
+    },
+    {
+      "stationcode": 4252,
+      "station": "VAUNIA"
+    },
+    {
+      "stationcode": 1036,
+      "station": "VEYANGODA"
+    },
+    {
+      "stationcode": 8034,
+      "station": "WADDUWA"
+    },
+    {
+      "stationcode": 9044,
+      "station": "WAGGA"
+    },
+    {
+      "stationcode": 3045,
+      "station": "WAIKKALA"
+    },
+    {
+      "stationcode": 3063,
+      "station": "WALAHAPITIYA"
+    },
+    {
+      "stationcode": 1068,
+      "station": "WALAKUMBURA"
+    },
+    {
+      "stationcode": 8156,
+      "station": "WALGAMA"
+    },
+    {
+      "stationcode": 1016,
+      "station": "WALPOLA"
+    },
+    {
+      "stationcode": 1007,
+      "station": "WANAWASALA"
+    },
+    {
+      "stationcode": 1037,
+      "station": "WANDURAWA"
+    },
+    {
+      "stationcode": 1192,
+      "station": "WATAGODA"
+    },
+    {
+      "stationcode": 9034,
+      "station": "WATAREKA PLATFORM"
+    },
+    {
+      "stationcode": 1160,
+      "station": "WATAWALA"
+    },
+    {
+      "stationcode": 2131,
+      "station": "WATTEGAMA"
+    },
+    {
+      "stationcode": 8143,
+      "station": "WELIGAMA"
+    },
+    {
+      "stationcode": 6284,
+      "station": "WELIKANDA"
+    },
+    {
+      "stationcode": 4103,
+      "station": "WELLAWA"
+    },
+    {
+      "stationcode": 8009,
+      "station": "WELLAWATTA"
+    },
+    {
+      "stationcode": 1047,
+      "station": "WIJAYARAJADAHANA"
+    },
+    {
+      "stationcode": 1050,
+      "station": "WILWATTA"
+    },
+    {
+      "stationcode": 1022,
+      "station": "YAGODA"
+    },
+    {
+      "stationcode": 1081,
+      "station": "YATAGAMA"
+    },
+    {
+      "stationcode": 1058,
+      "station": "YATHTHALGODA"
+    }
+  ]

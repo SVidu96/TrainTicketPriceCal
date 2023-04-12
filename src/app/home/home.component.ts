@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 //import StationsList from 'src/assets/json/stations.json'
 import { Station } from '../common/models/Station';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { SlrStations } from '../common/models/SlrStations';
 
 @Component({
   selector: 'app-home',
@@ -12,15 +13,22 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  apiDistance = 0;
 
   constructor(private http: HttpClient) {
-    this.http.get('assets/json/Stations.json').subscribe((res) => {
-      this.StationList = res;
-      this.Stations = this.StationList;
+    // this.http.get('assets/json/Stations.json').subscribe((res) => {
+    //   this.StationList = res;
+    //   this.Stations = this.StationList;
+    // });
+
+    this.http.get('/assets/json/SlrStations.json').subscribe((response) => {
+      this.SlrStationList = response;
+      this.SlrStations = this.SlrStationList;
     });
   }
 
   StationList: any
+  SlrStationList: any
 
   myControl = new FormControl('');
   //options: string[] = ['One', 'Two', 'Three'];
@@ -50,6 +58,7 @@ export class HomeComponent implements OnInit {
   RATE35 = 1.1;
 
   Stations: Station[];
+  SlrStations: SlrStations[];
   valFromStation: any;
   valToStation: any;
   valTicketClass: any;
@@ -61,13 +70,13 @@ export class HomeComponent implements OnInit {
 
   fromStation = new FormControl('', Validators.required);
   toStation = new FormControl('', Validators.required);
-  ticketClass= new FormControl('', Validators.required);
+  ticketClass = new FormControl('', Validators.required);
   ticketType = new FormControl('', Validators.required);
   //testInput  = new FormControl('');
 
   // calculatorForm = new FormGroup({
-    
-    
+
+
   // })
 
   ngOnInit() {
@@ -95,12 +104,12 @@ export class HomeComponent implements OnInit {
   // }
 
 
-  getPrice() {
-    //debugger
+  async getPrice() {
     this.valDistance = 0.0;
     this.initData()
-    this.valDistance = this.getDistance(this.valFromStation, this.valToStation)
-    this.valTicketPrice = this.calculatePrice(this.valDistance) ?? 0.0;
+    //this.valDistance = this.getDistance(this.valFromStation, this.valToStation)
+    await this.getAPIDistance(this.valFromStation, this.valToStation)
+    this.valTicketPrice = this.calculatePrice(this.apiDistance) ?? 0.0;
 
     //console.log(this.testInput.value +"----"+ this.calculatePrice(parseFloat(this.testInput.value?.toString()??"0.0")))
 
@@ -116,6 +125,50 @@ export class HomeComponent implements OnInit {
     this.valTicketType = this.ticketType.value;
   }
 
+  async getAPIDistance(fromStation: SlrStations, toStation: SlrStations) {
+    this.apiDistance = 0;
+    const url = 'railway.gov.lk/web/index2.php?option=com_gettot&task=gettot&to=' + toStation.stationcode + '&from=' + fromStation.stationcode + '&amount=&special_items=4&train_type=1&lang=en';
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const finalUrl = proxyUrl + url;
+    const body = {
+      // Add your POST request body here
+    };
+    const headers = {
+      responseType: 'text'
+    };
+    const result = this.http.post(finalUrl, body, { headers })
+    await firstValueFrom(result).catch((err: any) => {
+
+      const regex = /Distance:\s+(\d+\.\d+)\s+Km/;
+      const match = regex.exec(err.error.text);
+
+      if (match) {
+        this.apiDistance = +match[1];
+      } else {
+        // console.log("No match found.");
+      }
+      // console.log(this.apiDistance)
+    });
+    // ((resp: any) => {
+    //  let x= resp 
+    // }, (error: any) => {
+    //   const regex = /Distance:\s+(\d+\.\d+)\s+Km/;
+    //   const match = regex.exec(error.error.text);
+
+    //   if (match) {
+    //     this.apiDistance = +match[1];
+    //   } else {
+    //     console.log("No match found.");
+    //   }
+
+    // },()=>{
+    //   console.log(this.apiDistance);
+
+    //   return this.apiDistance
+    // });
+    // return 1
+  }
+
   getDistance(fromStation: Station, toStation: Station): number {
     if (fromStation?.keyline == "00" || toStation?.keyline == "00") //Include Fort one of the stations
     {
@@ -124,42 +177,41 @@ export class HomeComponent implements OnInit {
     else if (fromStation?.keyline.charAt(0) == toStation?.keyline.charAt(0)) //same line
     {
       return (Math.abs(fromStation?.distance - toStation?.distance))
-    } else if(fromStation?.keyline.charAt(0) != toStation?.keyline.charAt(0)){
-      //debugger
+    } else if (fromStation?.keyline.charAt(0) != toStation?.keyline.charAt(0)) {
       let zeroStation = new Station();
       this.Stations.forEach(element => {
-        if(element.keyline=="00"){
+        if (element.keyline == "00") {
           zeroStation = element;
         }
       });
 
       let junctionStation = null
 
-      this.Stations.forEach(element=>{
-        if((fromStation?.keyline.charAt(0)==element?.isJunction?.charAt(0))){
+      this.Stations.forEach(element => {
+        if ((fromStation?.keyline.charAt(0) == element?.isJunction?.charAt(0))) {
           junctionStation = new Station();
           junctionStation = element;
         }
       })
 
-      if(junctionStation == null){
-        this.Stations.forEach(element=>{
-          if((toStation?.keyline.charAt(0)==element?.isJunction?.charAt(0))){
+      if (junctionStation == null) {
+        this.Stations.forEach(element => {
+          if ((toStation?.keyline.charAt(0) == element?.isJunction?.charAt(0))) {
             junctionStation = new Station();
             junctionStation = element;
           }
         })
       }
-      if(junctionStation == null) junctionStation = zeroStation
+      if (junctionStation == null) junctionStation = zeroStation
 
       return Math.abs((fromStation.distance + toStation.distance) - Math.abs(junctionStation.distance - zeroStation.distance))
 
     }
-    
+
     else return 0.0
   }
 
-  calculatePrice(distance:number) {
+  calculatePrice(distance: number) {
     let ticketPrice = 0.0;
     if (this.valTicketClass == "1") {
       ticketPrice = this.calFirstClass(distance)
@@ -192,7 +244,7 @@ export class HomeComponent implements OnInit {
     else if (distance <= this.DIST2) price = ((distance - this.DIST1) * this.RATE12) + (this.RATE11 * this.DIST1)
     else if (distance <= this.DIST3) price = ((distance - this.DIST2) * this.RATE13) + (this.RATE11 * this.DIST1) + (this.RATE12 * (this.DIST2 - this.DIST1))
     else if (distance <= this.DIST4) price = ((distance - this.DIST3) * this.RATE14) + (this.RATE11 * this.DIST1) + (this.RATE12 * (this.DIST2 - this.DIST1)) + (this.RATE13 * (this.DIST3 - this.DIST2))
-    else if (distance > this.DIST4)  price = ((distance - this.DIST4) * this.RATE15) + (this.RATE11 * this.DIST1) + (this.RATE12 * (this.DIST2 - this.DIST1)) + (this.RATE13 * (this.DIST3 - this.DIST2)) + (this.RATE14 * (this.DIST4-this.DIST3))
+    else if (distance > this.DIST4) price = ((distance - this.DIST4) * this.RATE15) + (this.RATE11 * this.DIST1) + (this.RATE12 * (this.DIST2 - this.DIST1)) + (this.RATE13 * (this.DIST3 - this.DIST2)) + (this.RATE14 * (this.DIST4 - this.DIST3))
 
     if (price > 0 && price <= 100) {
       return 100;
@@ -217,7 +269,7 @@ export class HomeComponent implements OnInit {
     else if (distance <= this.DIST2) price = ((distance - this.DIST1) * this.RATE22) + (this.RATE21 * this.DIST1)
     else if (distance <= this.DIST3) price = ((distance - this.DIST2) * this.RATE23) + (this.RATE21 * this.DIST1) + (this.RATE22 * (this.DIST2 - this.DIST1))
     else if (distance <= this.DIST4) price = ((distance - this.DIST3) * this.RATE24) + (this.RATE21 * this.DIST1) + (this.RATE22 * (this.DIST2 - this.DIST1)) + (this.RATE23 * (this.DIST3 - this.DIST2))
-    else if (distance > this.DIST4)  price = ((distance - this.DIST4) * this.RATE25) + (this.RATE21 * this.DIST1) + (this.RATE22 * (this.DIST2 - this.DIST1)) + (this.RATE23 * (this.DIST3 - this.DIST2)) + (this.RATE24 * (this.DIST4-this.DIST3))
+    else if (distance > this.DIST4) price = ((distance - this.DIST4) * this.RATE25) + (this.RATE21 * this.DIST1) + (this.RATE22 * (this.DIST2 - this.DIST1)) + (this.RATE23 * (this.DIST3 - this.DIST2)) + (this.RATE24 * (this.DIST4 - this.DIST3))
     //console.log(price + "second")
     return price != 0.0 ? this.ceiling(price, 50) : 0.0
 
@@ -231,13 +283,12 @@ export class HomeComponent implements OnInit {
     * 101<=200  - *1.4
     * >200   - *1.1
     */
-//debugger
     var price = 0.0
     if (distance <= this.DIST1) price = distance * this.RATE31
     else if (distance <= this.DIST2) price = ((distance - this.DIST1) * this.RATE32) + (this.RATE31 * this.DIST1)
     else if (distance <= this.DIST3) price = ((distance - this.DIST2) * this.RATE33) + (this.RATE31 * this.DIST1) + (this.RATE32 * (this.DIST2 - this.DIST1))
     else if (distance <= this.DIST4) price = ((distance - this.DIST3) * this.RATE34) + (this.RATE31 * this.DIST1) + (this.RATE32 * (this.DIST2 - this.DIST1)) + (this.RATE33 * (this.DIST3 - this.DIST2))
-    else if (distance > this.DIST4)  price = ((distance - this.DIST4) * this.RATE35) + (this.RATE31 * this.DIST1) + (this.RATE32 * (this.DIST2 - this.DIST1)) + (this.RATE33 * (this.DIST3 - this.DIST2)) + (this.RATE34 * (this.DIST4-this.DIST3))
+    else if (distance > this.DIST4) price = ((distance - this.DIST4) * this.RATE35) + (this.RATE31 * this.DIST1) + (this.RATE32 * (this.DIST2 - this.DIST1)) + (this.RATE33 * (this.DIST3 - this.DIST2)) + (this.RATE34 * (this.DIST4 - this.DIST3))
 
     return price != 0.0 ? this.ceiling(price, 20) : 0.0
 
@@ -248,8 +299,8 @@ export class HomeComponent implements OnInit {
   }
 
   getStation(stationName: string) {
-    let station = new Station()
-    this.Stations.forEach(element => {
+    let station = new SlrStations()
+    this.SlrStations.forEach(element => {
       if (element.station == stationName) {
         station = element;
       }

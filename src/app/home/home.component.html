@@ -15,7 +15,7 @@
            [(ngModel)]="searchText1"
            [matAutocomplete]="autoNationality">
     <mat-autocomplete #autoNationality="matAutocomplete">
-      <mat-option *ngFor="let station of Stations | appFilter: searchText1" [value]="station.station">
+      <mat-option *ngFor="let station of SlrStations | appFilter: searchText1" [value]="station.station">
         {{station.station}}
       </mat-option>
     </mat-autocomplete>
@@ -31,7 +31,7 @@
            [(ngModel)]="searchText2"
            [matAutocomplete]="auto">
     <mat-autocomplete #auto="matAutocomplete">
-      <mat-option *ngFor="let station of Stations | appFilter: searchText2" [value]="station.station">
+      <mat-option *ngFor="let station of SlrStations | appFilter: searchText2" [value]="station.station">
         {{station.station}}
       </mat-option>
     </mat-autocomplete>
