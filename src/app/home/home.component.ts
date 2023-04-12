@@ -129,7 +129,7 @@ export class HomeComponent implements OnInit {
     this.apiDistance = 0;
     const url = 'railway.gov.lk/web/index2.php?option=com_gettot&task=gettot&to=' + toStation.stationcode + '&from=' + fromStation.stationcode + '&amount=&special_items=4&train_type=1&lang=en';
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const finalUrl = proxyUrl + url;
+    const finalUrl = url;
     const body = {
       // Add your POST request body here
     };
