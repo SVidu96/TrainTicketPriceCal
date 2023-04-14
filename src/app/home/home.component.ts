@@ -31,9 +31,6 @@ export class HomeComponent implements OnInit {
   SlrStationList: any
 
   myControl = new FormControl('');
-  //options: string[] = ['One', 'Two', 'Three'];
-  //filteredOptions: Observable<Station[]>;
-
   DIST1 = 10;
   DIST2 = 50;
   DIST3 = 100;
@@ -72,12 +69,6 @@ export class HomeComponent implements OnInit {
   toStation = new FormControl('', Validators.required);
   ticketClass = new FormControl('', Validators.required);
   ticketType = new FormControl('', Validators.required);
-  //testInput  = new FormControl('');
-
-  // calculatorForm = new FormGroup({
-
-
-  // })
 
   ngOnInit() {
     this.ticketClass.setValue("3")
@@ -87,33 +78,15 @@ export class HomeComponent implements OnInit {
   }
 
   filterStations() {
-
   }
-
-  // filterOption(){
-  //   this.filteredOptions = this.myControl.valueChanges.pipe(
-  //     startWith(''),
-  //     map(value => this._filter(value || '')),
-  //   );
-  // }
-
-  // private _filter(value: string): string[] {
-  //   const filterValue = value.toLowerCase();
-
-  //   return this.options.filter(option => option.toLowerCase().includes(filterValue));
-  // }
-
 
   async getPrice() {
     this.valDistance = 0.0;
     this.initData()
     //this.valDistance = this.getDistance(this.valFromStation, this.valToStation)
-    await this.getAPIDistance(this.valFromStation, this.valToStation)
-    this.valTicketPrice = this.calculatePrice(this.apiDistance) ?? 0.0;
-
-    //console.log(this.testInput.value +"----"+ this.calculatePrice(parseFloat(this.testInput.value?.toString()??"0.0")))
-
-
+    await this.getAPIDistance(this.valFromStation, this.valToStation).then(()=>{
+      this.valTicketPrice = this.calculatePrice(this.apiDistance) ?? 0.0;
+    })
   }
 
   initData() {
@@ -127,46 +100,25 @@ export class HomeComponent implements OnInit {
 
   async getAPIDistance(fromStation: SlrStations, toStation: SlrStations) {
     this.apiDistance = 0;
-    const url = 'https://www.railway.gov.lk/web/index2.php?option=com_gettot&task=gettot&to=' + toStation.stationcode + '&from=' + fromStation.stationcode + '&amount=&special_items=4&train_type=1&lang=en';
+
+    const url = 'railway.gov.lk/web/index2.php?option=com_gettot&task=gettot&to=' + toStation.stationcode + '&from=' + fromStation.stationcode + '&amount=&special_items=4&train_type=1&lang=en';
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const finalUrl = url;
-    const body = {
-      // Add your POST request body here
-    };
-    const headers = {
-      responseType: 'text'
-    };
-    const result = this.http.post(finalUrl, body, { headers })
-    await firstValueFrom(result).catch((err: any) => {
-
-      const regex = /Distance:\s+(\d+\.\d+)\s+Km/;
-      const match = regex.exec(err.error.text);
-
-      if (match) {
-        this.apiDistance = +match[1];
-      } else {
-        // console.log("No match found.");
+    const finalUrl = proxyUrl + url;
+    await fetch(finalUrl, {
+      method: 'post',
+      headers: {
+        'x-cors-headers': JSON.stringify({
+        'cookies': 'x=123'
+        })
       }
-      // console.log(this.apiDistance)
-    });
-    // ((resp: any) => {
-    //  let x= resp 
-    // }, (error: any) => {
-    //   const regex = /Distance:\s+(\d+\.\d+)\s+Km/;
-    //   const match = regex.exec(error.error.text);
-
-    //   if (match) {
-    //     this.apiDistance = +match[1];
-    //   } else {
-    //     console.log("No match found.");
-    //   }
-
-    // },()=>{
-    //   console.log(this.apiDistance);
-
-    //   return this.apiDistance
-    // });
-    // return 1
+    }).then(res => res.text().then((resp) => {
+      const regex = /Distance:\s+(\d+\.\d+)\s+Km/;
+      const match = regex.exec(resp.toString());
+      if (match) {
+        this.apiDistance = +match[1];   
+      } else {
+      }
+    }))
   }
 
   getDistance(fromStation: Station, toStation: Station): number {
