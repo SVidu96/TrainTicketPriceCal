@@ -50,7 +50,7 @@
   </mat-button-toggle-group>
 
   <button mat-raised-button color="primary" class="check-price-button" (click)="getPrice()">Check Price</button>
-
+  <mat-spinner *ngIf="isProcessing" class="loading" diameter="25"></mat-spinner>
   <mat-card class="price-card" *ngIf="valTicketPrice!=0">Rs. {{valTicketPrice}}.00</mat-card>
 </form>
 </div>

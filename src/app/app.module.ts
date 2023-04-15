@@ -20,6 +20,7 @@ import { MatStepperModule } from "@angular/material/stepper";
 import { MatInputModule } from "@angular/material/input";
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { FilterPipe } from './common/pipes/filter.pipe';
 
@@ -49,7 +50,8 @@ import { FilterPipe } from './common/pipes/filter.pipe';
     MatStepperModule,
     MatInputModule,
     MatButtonToggleModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
     
   ],
   providers: [FormControl],

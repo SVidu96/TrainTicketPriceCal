@@ -14,7 +14,7 @@ import { SlrStations } from '../common/models/SlrStations';
 })
 export class HomeComponent implements OnInit {
   apiDistance = 0;
-
+  isProcessing = false;
   constructor(private http: HttpClient) {
     // this.http.get('assets/json/Stations.json').subscribe((res) => {
     //   this.StationList = res;
@@ -81,11 +81,14 @@ export class HomeComponent implements OnInit {
   }
 
   async getPrice() {
+    this.isProcessing = true
     this.valDistance = 0.0;
     this.initData()
     //this.valDistance = this.getDistance(this.valFromStation, this.valToStation)
     await this.getAPIDistance(this.valFromStation, this.valToStation).then(()=>{
       this.valTicketPrice = this.calculatePrice(this.apiDistance) ?? 0.0;
+    }).finally(()=>{
+    this.isProcessing = false;
     })
   }
 

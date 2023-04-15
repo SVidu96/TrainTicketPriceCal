@@ -6,7 +6,11 @@
   justify-content: center;
   color: white;
 }
-
+.loading{
+  display: flex;
+  left: 50%;
+  top: 10px;
+}
 .cont {
   display: flex;
   justify-content: center;
